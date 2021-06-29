@@ -36,7 +36,7 @@
     
     let baseURL = "https:\/\/vishvAsa.github.io\/AgamaH\/";
     let basePath = "/" + baseURL.split("/").slice(3).join("/");
-    let siteParams = JSON.parse("{\u0022contactlink\u0022:\u0022https:\/\/github.com\/vishvAsa\/AgamaH\/issues\/new\u0022,\u0022disqusshortcode\u0022:\u0022vvasuki-site\u0022,\u0022env\u0022:\u0022production\u0022,\u0022fullsearchurl\u0022:\u0022\/full_search\u0022,\u0022githubeditmepathbase\u0022:\u0022https:\/\/github.com\/vishvAsa\/AgamaH\/edit\/content\/\u0022,\u0022mainSections\u0022:[\u0022vaishnavah\u0022],\u0022mainsections\u0022:[\u0022vaishnavah\u0022]}");
+    let siteParams = JSON.parse("{\u0022contactlink\u0022:\u0022https:\/\/github.com\/vishvAsa\/AgamaH\/issues\/new\u0022,\u0022disqusshortcode\u0022:\u0022vvasuki-site\u0022,\u0022env\u0022:\u0022production\u0022,\u0022fullsearchurl\u0022:\u0022\/full_search\u0022,\u0022githubeditmepathbase\u0022:\u0022https:\/\/github.com\/vishvAsa\/AgamaH\/edit\/content\/\u0022,\u0022mainSections\u0022:[\u0022hinduism\u0022],\u0022mainsections\u0022:[\u0022hinduism\u0022]}");
     let pageDefaultsList = JSON.parse("[{\u0022scope\u0022:{\u0022pathPrefix\u0022:\u0022\u0022},\u0022values\u0022:{\u0022comments\u0022:true,\u0022footernav\u0022:\u0022top_bar\u0022,\u0022layout\u0022:\u0022page\u0022,\u0022search\u0022:true,\u0022sidebar\u0022:\u0022home_sidebar\u0022,\u0022topnav\u0022:\u0022top_bar\u0022,\u0022unicode_script\u0022:\u0022devanagari\u0022}}]");
     let sidebarsData = JSON.parse("{\u0022home_sidebar\u0022:{\u0022contents\u0022:[{\u0022url\u0022:\u0022recdir:\/\/\u0022},{\u0022contents\u0022:[{\u0022title\u0022:\u0022ज्यौतिषम्\u0022,\u0022url\u0022:\u0022..\/jyotiSham\/\u0022},{\u0022title\u0022:\u0022संस्कृतम्\u0022,\u0022url\u0022:\u0022..\/sanskrit\/\u0022},{\u0022title\u0022:\u0022संस्कारः\u0022,\u0022url\u0022:\u0022..\/saMskAra\/\u0022},{\u0022title\u0022:\u0022आगमः\u0022,\u0022url\u0022:\u0022..\/AgamaH\/\u0022},{\u0022title\u0022:\u0022कल्पान्तरम्\u0022,\u0022url\u0022:\u0022..\/kalpAntaram\/\u0022},{\u0022title\u0022:\u0022Notes Home\u0022,\u0022url\u0022:\u0022..\/notes\/\u0022},{\u0022title\u0022:\u0022वेदाः\u0022,\u0022url\u0022:\u0022..\/vedAH\/\u0022},{\u0022title\u0022:\u0022पुराणम्\u0022,\u0022url\u0022:\u0022..\/purANam\/\u0022},{\u0022title\u0022:\u0022काव्यम्\u0022,\u0022url\u0022:\u0022..\/kAvyam\/\u0022},{\u0022title\u0022:\u0022ಕನ್ನಡ\u0022,\u0022url\u0022:\u0022..\/kannaDa\/\u0022},{\u0022title\u0022:\u0022मीमांसा\u0022,\u0022url\u0022:\u0022..\/mImAMsA\/\u0022},{\u0022title\u0022:\u0022त्रिपिटकम्\u0022,\u0022url\u0022:\u0022..\/tipiTaka\/\u0022},{\u0022title\u0022:\u0022पाळयः\u0022,\u0022url\u0022:\u0022..\/pALi\/\u0022},{\u0022title\u0022:\u0022भाषान्तरम्\u0022,\u0022url\u0022:\u0022..\/bhAShAntaram\/\u0022},{\u0022title\u0022:\u0022English Lit\u0022,\u0022url\u0022:\u0022..\/english\/\u0022}],\u0022title\u0022:\u0022सङ्ग्रहान्तरम्\u0022},{\u0022contents\u0022:[{\u0022title\u0022:\u0022Tags\u0022,\u0022url\u0022:\u0022\/tags\/\u0022},{\u0022title\u0022:\u0022Categories\u0022,\u0022url\u0022:\u0022\/categories\/\u0022}],\u0022title\u0022:\u0022प्रकीर्णम्\u0022},{\u0022title\u0022:\u0022Vishvas\u0027s home page\u0022,\u0022url\u0022:\u0022\/\u0022},{\u0022title\u0022:\u0022\\u003ci class=\\\u0022fas fa-hand-holding-heart\\\u0022\\u003e\\u003c\/i\\u003eDonate Via Vishvas\u0022,\u0022url\u0022:\u0022https:\/\/vishvAsa.github.io\/interests\/dharma-via-vishvas\/\u0022}],\u0022title\u0022:\u0022भागाः\u0022}}");
     let autocompletePageUrl = "\/AgamaH\/data\/pages.tsv";
@@ -188,7 +188,7 @@
   </aside>
   <div id="post_content">
   <h2 id="what-is-hinduism">What is Hinduism?</h2>
-<p>Hinduism is a cultural ethos (../<a href="religion/">a religion for practical purposes</a>) that developed and established itself in the Indian subcontinent and vicinity before the arrival of intolerant foreign monotheism, nothing more and nothing less. Structurally and historically, it has a <strong>Core Vaidika mesh</strong>: The most foundational and impactful contributions to the Hindu ethos came from sages of the Indo-Aryan vedic tradition, whose very-universal ideas (together with the Indo Aryan conservative ritualist class) penetrated and bonded various similarly pagan populations. This ethos, ultimately, has the following important features:</p>
+<p>Hinduism is a cultural ethos (<a href="religion/">a religion for practical purposes</a>) that developed and established itself in the Indian subcontinent and vicinity before the arrival of intolerant foreign monotheism, nothing more and nothing less. Structurally and historically, it has a <strong>Core Vaidika mesh</strong>: The most foundational and impactful contributions to the Hindu ethos came from sages of the Indo-Aryan vedic tradition, whose very-universal ideas (together with the Indo Aryan conservative ritualist class) penetrated and bonded various similarly pagan populations. This ethos, ultimately, has the following important features:</p>
 <ul>
 <li>Concepts particular to the <strong>core vaidika</strong> framework, such as:
 <ul>
@@ -227,7 +227,7 @@
 <p>The last section of chapter 36 of PV Kane&rsquo;s vol 5 a must-read for every hindu who wants to understand his background. The part that starts [here](<a href="https://archive.org/stream">https://archive.org/stream</a> /HistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLawV.5.2/Kane_A-History-of-Dharmasastra-v5-2_1962#page/n945/mode/2up), specifically.</p>
 <p>An introduction to some of these concepts by shatAvadhAnI gaNesha here:</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/tMDOTpLR1NE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-<p>Is hinduism a religion? See <a href="../religion/">here</a>.</p>
+<p>Is hinduism a religion? See <a href="religion/">here</a>.</p>
 <h3 id="who-is-a-hindu">Who is a Hindu?</h3>
 <p>At a high level, for the purpose of this site, a Hindu is a person who is intimately connected with, and not antagonistic towards, the ancient cultural ethos of the Indian subcontinent, which was animated by the great vedic sagely tradition at its core with various mostly-friendly systems at the periphery. This excludes Indian converts to semitic religions, but includes non-Indians - say - Balinese Hindus and Thai brAhmaNas.</p>
 <h2 id="other-good-introductions">Other good introductions</h2>
@@ -247,8 +247,6 @@
 <li>CA textbooks hearing 2015: Omission of women [<a href="https://www.youtube.com/watch?v=m0f2iCtW9BA&amp;feature=player_embedded">YT</a>], caricature of caste [<a href="https://www.youtube.com/watch?v=2Y7zt4LtBh8&amp;feature=youtu.be">YT</a>]</li>
 <li>Suspicious terminology trends such as brahminical vs hindu (<a href="https://books.google.com/ngrams/graph?content=brahmanical%2Chindu&amp;year_start=1930&amp;year_end=2008&amp;corpus=15&amp;smoothing=5&amp;share=&amp;direct_url=t1%3B%2Cbrahmanical%3B%2Cc0%3B.t1%3B%2Chindu%3B%2Cc0">GTrends</a>, FB).</li>
 </ul>
-<h2 id="about-this-site">About this site</h2>
-<p>Popular pages: <a href="../../history/persons/">Heroes</a> .</p>
 
   </div>
 </article>
@@ -341,6 +339,29 @@
 
 <aside class="card border" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/tattvam/">&#43;Suchness तत्त्वम् </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: &#43;Suchness तत्त्वम्</li>
+        
+    </nav>
+</aside>
+
+            
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/hinduism/MT_lekhAH/">&#43;मानसतरङ्गिणीकृल्-लेखाः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
     </div>
@@ -376,6 +397,29 @@
         <li>iscjklanguage: false</li>
         
         <li>title: Benefits प्रयोजनम्</li>
+        
+    </nav>
+</aside>
+
+            
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/books/">Books </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: Books</li>
         
     </nav>
 </aside>
@@ -827,7 +871,7 @@
 
 <aside class="card border" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
-        <a href="https://vishvAsa.github.io/AgamaH/hinduism/misc-articles/sanderson_tolerance/">Tolerance - Sanderson </a>
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/misc-articles/sanderson_tolerance/">&#43;Tolerance - Sanderson </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
     </div>
     <nav id="section-tree-item-body-" class="card-body p-0 collapse">
@@ -836,7 +880,7 @@
         
         <li>iscjklanguage: false</li>
         
-        <li>title: Tolerance - Sanderson</li>
+        <li>title: &#43;Tolerance - Sanderson</li>
         
     </nav>
 </aside>
@@ -844,6 +888,1864 @@
             
             
             
+            
+            <li>
+                
+<ul>
+    <li><input type="checkbox" id="section-tree-item-&#43;Tolerance - Sanderson" checked="checked" /><label for="section-tree-item-&#43;Tolerance - Sanderson">&#43;Tolerance - Sanderson</label>
+        <ul>
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/misc-articles/sanderson_tolerance/">&#43;Tolerance - Sanderson </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: &#43;Tolerance - Sanderson</li>
+        
+    </nav>
+</aside>
+
+            
+            
+            
+            
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/misc-articles/sanderson_tolerance/00_Comments/">00 Comments </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: 00 Comments</li>
+        
+    </nav>
+</aside>
+
+            
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/misc-articles/sanderson_tolerance/03_Introduction/">03 Introduction </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: 03 Introduction</li>
+        
+    </nav>
+</aside>
+
+            
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/misc-articles/sanderson_tolerance/04_Vaidika_Exclusivity/">04 Vaidika Exclusivity </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: 04 Vaidika Exclusivity</li>
+        
+    </nav>
+</aside>
+
+            
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/misc-articles/sanderson_tolerance/05_The_shaivas_Inclusivist_View_of_Their_Own_and_the_Vaidikas_Religion/">05 The Śaivas’ Inclusivist View of Their Own and the Vaidikas’ Religion </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: 05 The Śaivas’ Inclusivist View of Their Own and the Vaidikas’ Religion</li>
+        
+    </nav>
+</aside>
+
+            
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/misc-articles/sanderson_tolerance/06_The_Properly_shaiva_Attitude_of_shaivas_Towards_Their_Vaidika_Rites/">06 The Properly Śaiva Attitude of Śaivas Towards Their Vaidika Rites </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: 06 The Properly Śaiva Attitude of Śaivas Towards Their Vaidika Rites</li>
+        
+    </nav>
+</aside>
+
+            
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/misc-articles/sanderson_tolerance/07_The_shAkta-shaiva_Attitude_Towards_Vaidika_Observance_Among_Initiates/">07 The Śākta-Śaiva Attitude Towards Vaidika Observance Among Initiates </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: 07 The Śākta-Śaiva Attitude Towards Vaidika Observance Among Initiates</li>
+        
+    </nav>
+</aside>
+
+            
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/misc-articles/sanderson_tolerance/08_The_Loss_of_Transcendence/">08 The Loss of Transcendence </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: 08 The Loss of Transcendence</li>
+        
+    </nav>
+</aside>
+
+            
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/misc-articles/sanderson_tolerance/09_Jayanta/">09 Jayanta </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: 09 Jayanta</li>
+        
+    </nav>
+</aside>
+
+            
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/misc-articles/sanderson_tolerance/10_bhaTTa_rAmakaNTha_IIs_shaivas_without_Pride_of_Transcendence/">10 Bhaṭṭa Rāmakaṇṭha II’s Śaivas without Pride of Transcendence </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: 10 Bhaṭṭa Rāmakaṇṭha II’s Śaivas without Pride of Transcendence</li>
+        
+    </nav>
+</aside>
+
+            
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/misc-articles/sanderson_tolerance/11_aparAdityas_shaivas_by_Birth/">11 Aparāditya’s Śaivas by Birth </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: 11 Aparāditya’s Śaivas by Birth</li>
+        
+    </nav>
+</aside>
+
+            
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/misc-articles/sanderson_tolerance/12_Religion_and_the_State_A_Maximally_Tolerant_View_of_What_Is_Acceptable_in_Matters_of_Religion/">12 Religion and the State: A Maximally Tolerant View of What Is Acceptable in Matters of Religion </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: 12 Religion and the State: A Maximally Tolerant View of What Is Acceptable in Matters of Religion</li>
+        
+    </nav>
+</aside>
+
+            
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/misc-articles/sanderson_tolerance/13_Persecution/">13 Persecution </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: 13 Persecution</li>
+        
+    </nav>
+</aside>
+
+            
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/misc-articles/sanderson_tolerance/14_References/">14 References </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: 14 References</li>
+        
+    </nav>
+</aside>
+
+            
+            
+            
+            
+        </ul>
+    </li>
+</ul>
+
+            </li>
+            
+        </ul>
+    </li>
+</ul>
+
+            </li>
+            
+            <li>
+                
+<ul>
+    <li><input type="checkbox" id="section-tree-item-&#43;Suchness तत्त्वम्" checked="checked" /><label for="section-tree-item-&#43;Suchness तत्त्वम्">&#43;Suchness तत्त्वम्</label>
+        <ul>
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/tattvam/">&#43;Suchness तत्त्वम् </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: &#43;Suchness तत्त्वम्</li>
+        
+    </nav>
+</aside>
+
+            
+            
+            
+            
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/tattvam/bases/">&#43;Bases </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: &#43;Bases</li>
+        
+    </nav>
+</aside>
+
+            
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/tattvam/Rtam/">&#43;Connection-web ऋतम् </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: &#43;Connection-web ऋतम्</li>
+        
+    </nav>
+</aside>
+
+            
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/tattvam/darshanam/">&#43;Views विचारधाराः </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: &#43;Views विचारधाराः</li>
+        
+    </nav>
+</aside>
+
+            
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/tattvam/devaH/">&#43;देवाः Gods </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: &#43;देवाः Gods</li>
+        
+    </nav>
+</aside>
+
+            
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/tattvam/puruShArthaH/">&#43;पुरुषार्थाः Goals of life </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: &#43;पुरुषार्थाः Goals of life</li>
+        
+    </nav>
+</aside>
+
+            
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/tattvam/eternal_conflict/">Conflict सङ्ग्रामः </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: Conflict सङ्ग्रामः</li>
+        
+    </nav>
+</aside>
+
+            
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/tattvam/creation/">Creation and suffering </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: Creation and suffering</li>
+        
+    </nav>
+</aside>
+
+            
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/tattvam/science-magic/">Science and magic </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: Science and magic</li>
+        
+    </nav>
+</aside>
+
+            
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/tattvam/chit/">चित् Consciousness </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: चित् Consciousness</li>
+        
+    </nav>
+</aside>
+
+            
+            
+            
+            
+            <li>
+                
+<ul>
+    <li><input type="checkbox" id="section-tree-item-&#43;Bases" checked="checked" /><label for="section-tree-item-&#43;Bases">&#43;Bases</label>
+        <ul>
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/tattvam/bases/">&#43;Bases </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: &#43;Bases</li>
+        
+    </nav>
+</aside>
+
+            
+            
+            
+            
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/tattvam/bases/books/">&#43;Books- Intro </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: &#43;Books- Intro</li>
+        
+    </nav>
+</aside>
+
+            
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/tattvam/bases/omniscience/">Omniscience / sarvajJNatA </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: Omniscience / sarvajJNatA</li>
+        
+    </nav>
+</aside>
+
+            
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/tattvam/bases/pratyaxa/">प्रत्यक्षम् Direct witness </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: प्रत्यक्षम् Direct witness</li>
+        
+    </nav>
+</aside>
+
+            
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/tattvam/bases/elders/">शिष्टः Role-models </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: शिष्टः Role-models</li>
+        
+    </nav>
+</aside>
+
+            
+            
+            
+            
+            <li>
+                
+<ul>
+    <li><input type="checkbox" id="section-tree-item-&#43;Books- Intro" checked="checked" /><label for="section-tree-item-&#43;Books- Intro">&#43;Books- Intro</label>
+        <ul>
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/tattvam/bases/books/">&#43;Books- Intro </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: &#43;Books- Intro</li>
+        
+    </nav>
+</aside>
+
+            
+            
+            
+            
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/tattvam/bases/books/contrasts/">Contrasts </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: Contrasts</li>
+        
+    </nav>
+</aside>
+
+            
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/tattvam/bases/books/deciding/">Deriving knowledge </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: Deriving knowledge</li>
+        
+    </nav>
+</aside>
+
+            
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/tattvam/bases/books/non-absoluteness/">Non-absoluteness </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: Non-absoluteness</li>
+        
+    </nav>
+</aside>
+
+            
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/tattvam/bases/books/authority-contests/">Pedigree and corruption </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: Pedigree and corruption</li>
+        
+    </nav>
+</aside>
+
+            
+            
+            
+            
+        </ul>
+    </li>
+</ul>
+
+            </li>
+            
+        </ul>
+    </li>
+</ul>
+
+            </li>
+            
+            <li>
+                
+<ul>
+    <li><input type="checkbox" id="section-tree-item-&#43;Connection-web ऋतम्" checked="checked" /><label for="section-tree-item-&#43;Connection-web ऋतम्">&#43;Connection-web ऋतम्</label>
+        <ul>
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/tattvam/Rtam/">&#43;Connection-web ऋतम् </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: &#43;Connection-web ऋतम्</li>
+        
+    </nav>
+</aside>
+
+            
+            
+            
+            
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/tattvam/Rtam/karma/">karma </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: karma</li>
+        
+    </nav>
+</aside>
+
+            
+            
+            
+            
+        </ul>
+    </li>
+</ul>
+
+            </li>
+            
+            <li>
+                
+<ul>
+    <li><input type="checkbox" id="section-tree-item-&#43;Views विचारधाराः" checked="checked" /><label for="section-tree-item-&#43;Views विचारधाराः">&#43;Views विचारधाराः</label>
+        <ul>
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/tattvam/darshanam/">&#43;Views विचारधाराः </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: &#43;Views विचारधाराः</li>
+        
+    </nav>
+</aside>
+
+            
+            
+            
+            
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/tattvam/darshanam/labeling/">Labeling </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: Labeling</li>
+        
+    </nav>
+</aside>
+
+            
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/tattvam/darshanam/tendencies/">Tendencies </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: Tendencies</li>
+        
+    </nav>
+</aside>
+
+            
+            
+            
+            
+        </ul>
+    </li>
+</ul>
+
+            </li>
+            
+            <li>
+                
+<ul>
+    <li><input type="checkbox" id="section-tree-item-&#43;देवाः Gods" checked="checked" /><label for="section-tree-item-&#43;देवाः Gods">&#43;देवाः Gods</label>
+        <ul>
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/tattvam/devaH/">&#43;देवाः Gods </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: &#43;देवाः Gods</li>
+        
+    </nav>
+</aside>
+
+            
+            
+            
+            
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/tattvam/devaH/deification/">&#43;Deification </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: &#43;Deification</li>
+        
+    </nav>
+</aside>
+
+            
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/tattvam/devaH/hierarchy/">&#43;Hierarchy and Competition </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: &#43;Hierarchy and Competition</li>
+        
+    </nav>
+</aside>
+
+            
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/tattvam/devaH/labeling/">&#43;Labeling </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: &#43;Labeling</li>
+        
+    </nav>
+</aside>
+
+            
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/tattvam/devaH/limited_devatAs/">&#43;Limited devatas </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: &#43;Limited devatas</li>
+        
+    </nav>
+</aside>
+
+            
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/tattvam/devaH/benefits/">Benefits </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: Benefits</li>
+        
+    </nav>
+</aside>
+
+            
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/tattvam/devaH/choosing/">Choosing </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: Choosing</li>
+        
+    </nav>
+</aside>
+
+            
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/tattvam/devaH/connection/">Connection </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: Connection</li>
+        
+    </nav>
+</aside>
+
+            
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/tattvam/devaH/generality/">Generality </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: Generality</li>
+        
+    </nav>
+</aside>
+
+            
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/tattvam/devaH/harmony/">Harmony </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: Harmony</li>
+        
+    </nav>
+</aside>
+
+            
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/tattvam/devaH/multiplicity/">Multiplicity </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: Multiplicity</li>
+        
+    </nav>
+</aside>
+
+            
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/tattvam/devaH/myth/">Myths </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: Myths</li>
+        
+    </nav>
+</aside>
+
+            
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/tattvam/devaH/non-evil/">Non-evil </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: Non-evil</li>
+        
+    </nav>
+</aside>
+
+            
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/tattvam/devaH/polycentric_field/">Polycentric field </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: Polycentric field</li>
+        
+    </nav>
+</aside>
+
+            
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/tattvam/devaH/shAstra-sambandhaH/">शास्त्र-सम्बन्धः </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: शास्त्र-सम्बन्धः</li>
+        
+    </nav>
+</aside>
+
+            
+            
+            
+            
+            <li>
+                
+<ul>
+    <li><input type="checkbox" id="section-tree-item-&#43;Deification" checked="checked" /><label for="section-tree-item-&#43;Deification">&#43;Deification</label>
+        <ul>
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/tattvam/devaH/deification/">&#43;Deification </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: &#43;Deification</li>
+        
+    </nav>
+</aside>
+
+            
+            
+            
+            
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/tattvam/devaH/deification/MT_lekhAH/">&#43;मानसतरङ्गिणीकृल्-लेखाः </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: &#43;मानसतरङ्गिणीकृल्-लेखाः</li>
+        
+        <li>unicode_script: devanagari</li>
+        
+    </nav>
+</aside>
+
+            
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/tattvam/devaH/deification/shaiva-siddhAnta-view/">Shaiva-siddhAnta view </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: Shaiva-siddhAnta view</li>
+        
+    </nav>
+</aside>
+
+            
+            
+            
+            
+            <li>
+                
+<ul>
+    <li><input type="checkbox" id="section-tree-item-&#43;मानसतरङ्गिणीकृल्-लेखाः" checked="checked" /><label for="section-tree-item-&#43;मानसतरङ्गिणीकृल्-लेखाः">&#43;मानसतरङ्गिणीकृल्-लेखाः</label>
+        <ul>
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/tattvam/devaH/deification/MT_lekhAH/">&#43;मानसतरङ्गिणीकृल्-लेखाः </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: &#43;मानसतरङ्गिणीकृल्-लेखाः</li>
+        
+        <li>unicode_script: devanagari</li>
+        
+    </nav>
+</aside>
+
+            
+            
+            
+            
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/tattvam/devaH/deification/MT_lekhAH/avatAra-history/">avatAra-history </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: avatAra-history</li>
+        
+    </nav>
+</aside>
+
+            
+            
+            
+            
+        </ul>
+    </li>
+</ul>
+
+            </li>
+            
+        </ul>
+    </li>
+</ul>
+
+            </li>
+            
+            <li>
+                
+<ul>
+    <li><input type="checkbox" id="section-tree-item-&#43;Hierarchy and Competition" checked="checked" /><label for="section-tree-item-&#43;Hierarchy and Competition">&#43;Hierarchy and Competition</label>
+        <ul>
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/tattvam/devaH/hierarchy/">&#43;Hierarchy and Competition </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: &#43;Hierarchy and Competition</li>
+        
+    </nav>
+</aside>
+
+            
+            
+            
+            
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/tattvam/devaH/hierarchy/cult-competition/">Competition among cults </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: Competition among cults</li>
+        
+    </nav>
+</aside>
+
+            
+            
+            
+            
+        </ul>
+    </li>
+</ul>
+
+            </li>
+            
+            <li>
+                
+<ul>
+    <li><input type="checkbox" id="section-tree-item-&#43;Labeling" checked="checked" /><label for="section-tree-item-&#43;Labeling">&#43;Labeling</label>
+        <ul>
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/tattvam/devaH/labeling/">&#43;Labeling </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: &#43;Labeling</li>
+        
+    </nav>
+</aside>
+
+            
+            
+            
+            
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/tattvam/devaH/labeling/atheism/">(A)theism/ (a)dEvism? </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: (A)theism/ (a)dEvism?</li>
+        
+    </nav>
+</aside>
+
+            
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/tattvam/devaH/labeling/henotheism/">Henotheism </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: Henotheism</li>
+        
+    </nav>
+</aside>
+
+            
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/tattvam/devaH/labeling/polytheism/">Polytheism </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: Polytheism</li>
+        
+    </nav>
+</aside>
+
+            
+            
+            
+            
+        </ul>
+    </li>
+</ul>
+
+            </li>
+            
+            <li>
+                
+<ul>
+    <li><input type="checkbox" id="section-tree-item-&#43;Limited devatas" checked="checked" /><label for="section-tree-item-&#43;Limited devatas">&#43;Limited devatas</label>
+        <ul>
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/tattvam/devaH/limited_devatAs/">&#43;Limited devatas </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: &#43;Limited devatas</li>
+        
+    </nav>
+</aside>
+
+            
+            
+            
+            
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/tattvam/devaH/limited_devatAs/mantreshaH/">mantresha-s </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: mantresha-s</li>
+        
+    </nav>
+</aside>
+
+            
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/tattvam/devaH/limited_devatAs/near-humans/">Near Humans </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: Near Humans</li>
+        
+    </nav>
+</aside>
+
+            
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/tattvam/devaH/limited_devatAs/objects_of_wonder/">Objects of wonder </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: Objects of wonder</li>
+        
+    </nav>
+</aside>
+
+            
+            
+            
+            
+        </ul>
+    </li>
+</ul>
+
+            </li>
+            
+        </ul>
+    </li>
+</ul>
+
+            </li>
+            
+            <li>
+                
+<ul>
+    <li><input type="checkbox" id="section-tree-item-&#43;पुरुषार्थाः Goals of life" checked="checked" /><label for="section-tree-item-&#43;पुरुषार्थाः Goals of life">&#43;पुरुषार्थाः Goals of life</label>
+        <ul>
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/tattvam/puruShArthaH/">&#43;पुरुषार्थाः Goals of life </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: &#43;पुरुषार्थाः Goals of life</li>
+        
+    </nav>
+</aside>
+
+            
+            
+            
+            
+            
+
+
+
+
+
+<aside class="card border" id="section-tree-item-">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://vishvAsa.github.io/AgamaH/hinduism/tattvam/puruShArthaH/Ananda-problem/">Ananda addiction </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: Ananda addiction</li>
+        
+    </nav>
+</aside>
+
+            
+            
+            
+            
+        </ul>
+    </li>
+</ul>
+
+            </li>
             
         </ul>
     </li>
@@ -933,7 +2835,7 @@
     </a>
     <a class="btn btn-secondary" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
     <div class="btn small border">
-      Built on 2021 Jun 26 16:31:16 UTC. (<a href="http://google.com/search?q=16%3a31%3a16%20UTC to IST">IST</a>)
+      Built on 2021 Jun 29 09:20:55 UTC. (<a href="http://google.com/search?q=09%3a20%3a55%20UTC to IST">IST</a>)
     </div>
   <ul id="footer-bar-right-custom" class="list-group list-group-horizontal">
   </ul>
