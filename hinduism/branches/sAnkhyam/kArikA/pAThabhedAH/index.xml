@@ -7,12 +7,31 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://vishvAsa.github.io/AgamaH/hinduism/branches/sAnkhyam/kArikA/pAThabhedAH/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Index</title>
-      <link>https://vishvAsa.github.io/AgamaH/hinduism/branches/sAnkhyam/kArikA/pAThabhedAH/Index/</link>
+      <title>Meta</title>
+      <link>https://vishvAsa.github.io/AgamaH/hinduism/branches/sAnkhyam/kArikA/pAThabhedAH/Meta/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://vishvAsa.github.io/AgamaH/hinduism/branches/sAnkhyam/kArikA/pAThabhedAH/Index/</guid>
-      <description>अ
+      <guid>https://vishvAsa.github.io/AgamaH/hinduism/branches/sAnkhyam/kArikA/pAThabhedAH/Meta/</guid>
+      <description>Isvarakrsna: Samkhyakarika
+Input by Ferenc Ruzsa
+Copyright (C) Ferenc Ruzsa, 1998
+I hereby license this file to be freely copied for scholarly purposes.
+Anyone wishing to sell the file, or include it in any collection which
+is distributed for profit, must contact me to negotiate an appropriate
+license.
+The following editions have been utilised: V2: Solomon, Dr. Esther A.: Samkhya-Vrtti (V2). Edited by -. Ahmedabad 1973.
+T: Takakusu, M. J.: La Samkhyakarika etudiee a la lumiere de sa version</description>
+    </item>
+    
+    <item>
+      <title>Word Index</title>
+      <link>https://vishvAsa.github.io/AgamaH/hinduism/branches/sAnkhyam/kArikA/pAThabhedAH/word-index/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://vishvAsa.github.io/AgamaH/hinduism/branches/sAnkhyam/kArikA/pAThabhedAH/word-index/</guid>
+      <description>The words of the साङ्ख्यकारिका
+(variant readings are not given)
+अ
 अकरण ९
 अकर्तृ १९
 अकारण ६७
@@ -41,48 +60,7 @@
 अनुकम्पा ७०
 अनुपकारिन् ६०
 अनुपलब्धि ८
-अनुमान ४६
-अनेक १०
-अन्त १, ४०, ५४, ५६, ७१
-अन्तःकरण ३३, ३५</description>
-    </item>
-    
-    <item>
-      <title>Meta</title>
-      <link>https://vishvAsa.github.io/AgamaH/hinduism/branches/sAnkhyam/kArikA/pAThabhedAH/Meta/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://vishvAsa.github.io/AgamaH/hinduism/branches/sAnkhyam/kArikA/pAThabhedAH/Meta/</guid>
-      <description>Isvarakrsna: Samkhyakarika
-Input by Ferenc Ruzsa
-Copyright (C) Ferenc Ruzsa, 1998
-I hereby license this file to be freely copied for scholarly purposes.
-Anyone wishing to sell the file, or include it in any collection which
-is distributed for profit, must contact me to negotiate an appropriate
-license.
-The following editions have been utilised: V2: Solomon, Dr. Esther A.: Samkhya-Vrtti (V2). Edited by -. Ahmedabad 1973.
-T: Takakusu, M. J.: La Samkhyakarika etudiee a la lumiere de sa version</description>
-    </item>
-    
-    <item>
-      <title>पाठः</title>
-      <link>https://vishvAsa.github.io/AgamaH/hinduism/branches/sAnkhyam/kArikA/pAThabhedAH/pAThaH/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://vishvAsa.github.io/AgamaH/hinduism/branches/sAnkhyam/kArikA/pAThabhedAH/pAThaH/</guid>
-      <description>०१ दुःखत्रयाभिघाताज् जिज्ञासा तदप१घातके हेतौ ।
-दृष्टे सापार्था चेन् नैकान्तात्यन्ततोऽभावात् ॥ १॥
-1 अभि M, G(A, D, G); अव J, S
-०२ दृष्टवदानुश्रविकः स ह्यविशुद्धि१ क्षयातिशययुक्तः ।
-तद्विपरीतः श्रेयान् व्यक्ताव्यक्तज्ञविज्ञानात् ॥ २॥
-1 अविशुद्धः M
-०३ मूलप्रकृतिरविकृतिर्महदाद्याः१ प्रकृतिविकृतयः सप्त ।
-षोडशकस्तु विकारो न प्रकृतिर्न विकृतिः पुरुषः ॥ ३॥
-1 आद्या V1, V2
-०४ दृष्टमनुमानमाप्तवचनं च१ सर्वप्रमाणसिद्धत्वात् ।
-त्रिविधं प्रमाणमिष्टं प्रमेयसिद्धिः प्रमाणाद्धि ॥ ४॥
-1 आप्तं वचनं V (editor&amp;rsquo;s emendation)
-०५ प्रतिविषयाध्यवसायो दृष्टं त्रि१विधमनुमानमाख्यातम्।</description>
+अनुमान ४६</description>
     </item>
     
   </channel>
