@@ -71,13 +71,16 @@
     <loc>https://vishvAsa.github.io/AgamaH/meta/MT_lekhAH/2006-10-06_the-iconography-of-diverse-goddesses/</loc>
     <lastmod>2006-10-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://vishvAsa.github.io/AgamaH/AryaH/hinduism/articles/</loc>
+    <loc>https://vishvAsa.github.io/AgamaH/AryaH/hinduism/tattvam/articles/</loc>
     <lastmod>2006-10-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://vishvAsa.github.io/AgamaH/AryaH/hinduism/articles/MT_lekhAH/</loc>
+    <loc>https://vishvAsa.github.io/AgamaH/AryaH/hinduism/tattvam/</loc>
     <lastmod>2006-10-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://vishvAsa.github.io/AgamaH/AryaH/hinduism/articles/MT_lekhAH/2006-10-02_hindus-on-the-hard-problem/</loc>
+    <loc>https://vishvAsa.github.io/AgamaH/AryaH/hinduism/tattvam/articles/MT/</loc>
+    <lastmod>2006-10-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://vishvAsa.github.io/AgamaH/AryaH/hinduism/tattvam/articles/MT/2006-10-02_hindus-on-the-hard-problem/</loc>
     <lastmod>2006-10-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://vishvAsa.github.io/AgamaH/AryaH/hinduism/AchAraH/ritual/</loc>
@@ -255,6 +258,10 @@
   </url><url>
     <loc>https://vishvAsa.github.io/AgamaH/AryaH/hinduism/AchAraH/ritual/articles/</loc>
   </url><url>
+    <loc>https://vishvAsa.github.io/AgamaH/AryaH/hinduism/articles/</loc>
+  </url><url>
+    <loc>https://vishvAsa.github.io/AgamaH/AryaH/hinduism/bases/articles/</loc>
+  </url><url>
     <loc>https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/meta/articles/</loc>
   </url><url>
     <loc>https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/articles/</loc>
@@ -373,8 +380,6 @@
   </url><url>
     <loc>https://vishvAsa.github.io/AgamaH/AryaH/hinduism/social-cultivation/clan/theory/shUdra/</loc>
   </url><url>
-    <loc>https://vishvAsa.github.io/AgamaH/AryaH/hinduism/tattvam/</loc>
-  </url><url>
     <loc>https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/tantrasAraH/00/Summary/</loc>
   </url><url>
     <loc>https://vishvAsa.github.io/AgamaH/AryaH/hinduism/articles/svastika/</loc>
@@ -433,8 +438,6 @@
   </url><url>
     <loc>https://vishvAsa.github.io/AgamaH/AryaH/hinduism/social-cultivation/violence/animal-protection/go-raxA/</loc>
   </url><url>
-    <loc>https://vishvAsa.github.io/AgamaH/AryaH/hinduism/articles/gautamaH/</loc>
-  </url><url>
     <loc>https://vishvAsa.github.io/AgamaH/AryaH/hinduism/AchAraH/ritual/articles/ghorAngIrasa/</loc>
   </url><url>
     <loc>https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/shAnakara-darshanam/images/</loc>
@@ -490,6 +493,10 @@
     <loc>https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/brahma-sUtrANi/</loc>
   </url><url>
     <loc>https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/</loc>
+  </url><url>
+    <loc>https://vishvAsa.github.io/AgamaH/AryaH/hinduism/articles/MT/</loc>
+  </url><url>
+    <loc>https://vishvAsa.github.io/AgamaH/AryaH/hinduism/bases/articles/MT/</loc>
   </url><url>
     <loc>https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/mAlinI-vijaya-vArtikam/</loc>
   </url><url>
@@ -1041,6 +1048,8 @@
   </url><url>
     <loc>https://vishvAsa.github.io/AgamaH/AryaH/hinduism/AchAraH/history/</loc>
   </url><url>
+    <loc>https://vishvAsa.github.io/AgamaH/AryaH/hinduism/bases/articles/MT/history/</loc>
+  </url><url>
     <loc>https://vishvAsa.github.io/AgamaH/AryaH/hinduism/social-cultivation/violence/animal-protection/go-raxA/articles/MT/History_by_MT/</loc>
   </url><url>
     <loc>https://vishvAsa.github.io/AgamaH/AryaH/hinduism/articles/svastika/hooked-cross_vs_svastika/</loc>
@@ -1187,11 +1196,11 @@
   </url><url>
     <loc>https://vishvAsa.github.io/AgamaH/AryaH/hinduism/social-cultivation/pseudo_orthodoxy/</loc>
   </url><url>
+    <loc>https://vishvAsa.github.io/AgamaH/AryaH/hinduism/tattvam/articles/MT/punarjanman/</loc>
+  </url><url>
     <loc>https://vishvAsa.github.io/AgamaH/AryaH/hinduism/articles/svastika/quartz-article/</loc>
   </url><url>
     <loc>https://vishvAsa.github.io/AgamaH/AryaH/hinduism/social-cultivation/women/Rape/</loc>
-  </url><url>
-    <loc>https://vishvAsa.github.io/AgamaH/AryaH/hinduism/articles/gautamaH/rationality/</loc>
   </url><url>
     <loc>https://vishvAsa.github.io/AgamaH/AryaH/hinduism/social-cultivation/violence/animal-sacrifice/References_to_animal_sacrifice/</loc>
   </url><url>
