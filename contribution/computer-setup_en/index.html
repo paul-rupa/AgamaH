@@ -20,7 +20,7 @@
 
     <meta property="og:title" content="Computer setup (en)" />
 <meta property="og:description" content="संस्कृतेन सूचना द्रष्टुम् अत्र गम्यताम् ।
-Common setup  Below, replace XYZ with your github username. If https://github.com/XYZ/AgamaH exists beforehand, please delete it by going to settings using your browser. Go to https://github.com/vishvAsa/AgamaH and fork (there should be a Fork button in the top-right). Thence, you will get https://github.com/XYZ/AgamaH .  Going to the right place in your computer  We&rsquo;ll assume that you&rsquo;re saving all github files in some location such as the ones used below." />
+Common setup  Below, replace &lsquo;XYZ&rsquo; with your github username.  Or use this machine: Replace   If https://github.com/XYZ/AgamaH exists beforehand, please delete it by going to settings using your browser. Go to https://github.com/vishvAsa/AgamaH and fork (there should be a Fork button in the top-right). Thence, you will get https://github.com/XYZ/AgamaH .  Going to the right place in your computer  We&rsquo;ll assume that you&rsquo;re saving all github files in some location such as the ones used below." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://vishvAsa.github.io/AgamaH/contribution/computer-setup_en/" /><meta property="article:section" content="contribution" />
 
@@ -28,13 +28,13 @@ Common setup  Below, replace XYZ with your github username. If https://github.co
 
 <meta itemprop="name" content="Computer setup (en)">
 <meta itemprop="description" content="संस्कृतेन सूचना द्रष्टुम् अत्र गम्यताम् ।
-Common setup  Below, replace XYZ with your github username. If https://github.com/XYZ/AgamaH exists beforehand, please delete it by going to settings using your browser. Go to https://github.com/vishvAsa/AgamaH and fork (there should be a Fork button in the top-right). Thence, you will get https://github.com/XYZ/AgamaH .  Going to the right place in your computer  We&rsquo;ll assume that you&rsquo;re saving all github files in some location such as the ones used below.">
+Common setup  Below, replace &lsquo;XYZ&rsquo; with your github username.  Or use this machine: Replace   If https://github.com/XYZ/AgamaH exists beforehand, please delete it by going to settings using your browser. Go to https://github.com/vishvAsa/AgamaH and fork (there should be a Fork button in the top-right). Thence, you will get https://github.com/XYZ/AgamaH .  Going to the right place in your computer  We&rsquo;ll assume that you&rsquo;re saving all github files in some location such as the ones used below.">
 
-<meta itemprop="wordCount" content="357">
+<meta itemprop="wordCount" content="376">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Computer setup (en)"/>
 <meta name="twitter:description" content="संस्कृतेन सूचना द्रष्टुम् अत्र गम्यताम् ।
-Common setup  Below, replace XYZ with your github username. If https://github.com/XYZ/AgamaH exists beforehand, please delete it by going to settings using your browser. Go to https://github.com/vishvAsa/AgamaH and fork (there should be a Fork button in the top-right). Thence, you will get https://github.com/XYZ/AgamaH .  Going to the right place in your computer  We&rsquo;ll assume that you&rsquo;re saving all github files in some location such as the ones used below."/>
+Common setup  Below, replace &lsquo;XYZ&rsquo; with your github username.  Or use this machine: Replace   If https://github.com/XYZ/AgamaH exists beforehand, please delete it by going to settings using your browser. Go to https://github.com/vishvAsa/AgamaH and fork (there should be a Fork button in the top-right). Thence, you will get https://github.com/XYZ/AgamaH .  Going to the right place in your computer  We&rsquo;ll assume that you&rsquo;re saving all github files in some location such as the ones used below."/>
 
       
     
@@ -240,7 +240,11 @@ Common setup  Below, replace XYZ with your github username. If https://github.co
   <p>संस्कृतेन सूचना द्रष्टुम् <a href="../computer-setup_sa/">अत्र गम्यताम्</a> ।</p>
 <h2 id="common-setup">Common setup</h2>
 <ul>
-<li>Below, replace XYZ with your github username.</li>
+<li>Below, replace <em>&lsquo;XYZ&rsquo;</em> with your github username.
+<ul>
+<li>Or use this machine: <input id="input_githubUserId"></input><button id="transformId">Replace</button></li>
+</ul>
+</li>
 <li>If <a href="https://github.com/XYZ/AgamaH">https://github.com/XYZ/AgamaH</a> exists beforehand, please delete it by going to settings using your browser.</li>
 <li>Go to <a href="https://github.com/vishvAsa/AgamaH">https://github.com/vishvAsa/AgamaH</a> and fork (there should be a Fork button in the top-right). Thence, you will get <a href="https://github.com/XYZ/AgamaH">https://github.com/XYZ/AgamaH</a> .</li>
 </ul>
@@ -303,6 +307,16 @@ hugo server --renderToDisk --config ./config_dev.toml
 </ul>
 </li>
 </ul>
+<script>
+module_ui_lib.default.replaceWithQueryParam("githubUserId", /XYZ(?=[^'’])/g);
+
+document.getElementById("transformId").onclick = function(e) {
+  let userId = document.getElementById("input_githubUserId").value;
+  console.log(userId);
+  module_ui_lib.default.insertQueryParam("githubUserId", userId);
+};
+</script><blockquote>
+</blockquote>
 
   </div>
 </article>
@@ -343,7 +357,7 @@ hugo server --renderToDisk --config ./config_dev.toml
     <a class="btn btn-secondary" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
     <div class="btn small border">
       
-      <a href="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml"><img src="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml/badge.svg"> Built </a> on 2022 Feb 3 03:16:48 UTC. (<a href="http://google.com/search?q=03%3a16%3a48%20UTC to IST">IST</a>)
+      <a href="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml"><img src="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml/badge.svg"> Built </a> on 2022 Feb 3 03:21:30 UTC. (<a href="http://google.com/search?q=03%3a21%3a30%20UTC to IST">IST</a>)
     </div>
   <ul id="footer-bar-right-custom" class="list-group list-group-horizontal">
   </ul>
