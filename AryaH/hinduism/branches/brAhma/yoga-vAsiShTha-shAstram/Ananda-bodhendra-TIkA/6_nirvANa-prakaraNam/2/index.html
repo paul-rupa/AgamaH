@@ -132,7 +132,7 @@
 
 
     
-<header class="p-1 bg-yellow">
+<header class="p-1 bg-yellow noPrint">
     <nav role="navigation">
       <div id="div_top_bar" class="row">
         <div class="col-md-3 justify-content-start">
@@ -142,7 +142,7 @@
         </div>
         <div id="div_top_bar_right" class="col-md-auto d-flex justify-content-center">
           ✍
-          <select name="transliterationDropdown" size="1" onchange="module_transliteration.updateTransliteration()">
+          <select id="transliterationDropdown" size="1" onchange="module_transliteration.updateTransliteration()">
             <optgroup label="🌍">
               <option value="iso">āISO</option>
               <option value="cyrillic">пу</option>
@@ -175,16 +175,18 @@
             </optgroup>
           </select>
           🗨:
-          <select name="commentStyleDropdown" size="1" onchange="module_main.default.updateCommentStyleFromDropdown()">
+          <select id="commentStyleDropdown" size="1" onchange="module_main.default.updateCommentStyleFromDropdown()">
             <option value="on">✔</option>
             <option value="hidden">✗</option>
           </select>
-          <div><a  name="speakerButton" class="btn btn-secondary" onclick="module_main.default.handleSpeakToggle()">🎧️</a></div>
+          <div><a id="expandAllButton" class="btn btn-secondary" onclick="module_main.default.query.setParamAndGo('expandAll', 'true')">↕️️</a></div>
+          <div><a id="printButton" class="btn btn-secondary" onclick="module_main.default.query.setParamAndGo('printLayout', 'on')">🖨️️</a></div>
+          <div><a id="speakerButton" class="btn btn-secondary" onclick="module_main.default.handleSpeakToggle()">🎧️</a></div>
         </div>
         <div class="row col  d-flex justify-content-center">
           <a href="/full_search"  class="btn btn-secondary">🥽🔦</a>
-          <div><a  name="previousPage" href="" class="btn btn-secondary">###<i class="fas fa-caret-left"></i></a></div>
-          <div ><a name="nextPage" href="" class="btn btn-secondary"><i class="fas fa-caret-right"></i> ### </a></div>
+          <div><a id="previousPage" href="" class="btn btn-secondary">###<i class="fas fa-caret-left"></i></a></div>
+          <div ><a id="nextPage" href="" class="btn btn-secondary"><i class="fas fa-caret-right"></i> ### </a></div>
         </div>
         <ul id="top-bar-right-custom" class="list-group list-group-horizontal">
         </ul>
@@ -195,7 +197,7 @@
     
     <div class="row" name="contentRow">
       
-      <aside class="col-md-3 card border " id="sidebar">
+      <aside class="col-md-3 card border noPrint " id="sidebar">
           <div id="fastSearch">
               <input id="searchInput" placeholder="शीर्षिकान्विष्यताम्"  tabindex="0">
           </div>
@@ -213,12 +215,12 @@
 <header class='border d-flex justify-content-between'>
     <h1 id="&#43;२">&#43;२</h1>
     
-    <a id="editLink" class="btn btn-primary"  href="https://github.com/vishvAsa/AgamaH/edit/content/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/_index.md"><i class="fas fa-edit"></i></a>
+    <a id="editLink" class="btn btn-primary noPrint"  href="https://github.com/vishvAsa/AgamaH/edit/content/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/_index.md"><i class="fas fa-edit"></i></a>
     
 </header>
 <main>
     <article>
-  <aside id="toc_card" class="card border ">
+  <aside id="toc_card" class="card border noPrint ">
     <div id="toc_header" class="card-title border d-flex justify-content-between">
         <a data-toggle="collapse" href="#toc_body" role="button" aria-expanded="true" aria-controls="toc_body">
           What's in this page? <i class="fas fa-caret-down"></i> </a>
@@ -250,7 +252,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/">&#43;२ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -276,7 +278,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/001/">००१ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -299,7 +301,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/002/">००२ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -322,7 +324,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/003/">००३ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -345,7 +347,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/004/">००४ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -368,7 +370,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/005/">००५ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -391,7 +393,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/006/">००६ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -414,7 +416,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/008/">००८ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -437,7 +439,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/009/">००९ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -460,7 +462,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/010/">०१० </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -483,7 +485,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/011/">०११ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -506,7 +508,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/012/">०१२ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -529,7 +531,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/013/">०१३ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -552,7 +554,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/014/">०१४ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -575,7 +577,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/015/">०१५ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -598,7 +600,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/016/">०१६ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -621,7 +623,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/017/">०१७ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -644,7 +646,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/018/">०१८ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -667,7 +669,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/019/">०१९ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -690,7 +692,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/020/">०२० </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -713,7 +715,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/021/">०२१ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -736,7 +738,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/022/">०२२ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -759,7 +761,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/023/">०२३ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -782,7 +784,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/024/">०२४ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -805,7 +807,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/025/">०२५ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -828,7 +830,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/026/">०२६ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -851,7 +853,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/027/">०२७ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -874,7 +876,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/028/">०२८ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -897,7 +899,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/029/">०२९ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -920,7 +922,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/030/">०३० </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -943,7 +945,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/031/">०३१ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -966,7 +968,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/032/">०३२ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -989,7 +991,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/033/">०३३ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1012,7 +1014,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/034/">०३४ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1035,7 +1037,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/035/">०३५ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1058,7 +1060,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/036/">०३६ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1081,7 +1083,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/037/">०३७ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1104,7 +1106,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/038/">०३८ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1127,7 +1129,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/039/">०३९ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1150,7 +1152,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/040/">०४० </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1173,7 +1175,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/041/">०४१ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1196,7 +1198,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/042/">०४२ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1219,7 +1221,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/043/">०४३ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1242,7 +1244,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/044/">०४४ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1265,7 +1267,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/045/">०४५ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1288,7 +1290,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/046/">०४६ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1311,7 +1313,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/047/">०४७ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1334,7 +1336,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/048/">०४८ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1357,7 +1359,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/049/">०४९ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1380,7 +1382,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/050/">०५० </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1403,7 +1405,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/051/">०५१ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1426,7 +1428,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/052/">०५२ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1449,7 +1451,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/053/">०५३ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1472,7 +1474,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/054/">०५४ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1495,7 +1497,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/055/">०५५ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1518,7 +1520,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/056/">०५६ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1541,7 +1543,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/057/">०५७ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1564,7 +1566,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/058/">०५८ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1587,7 +1589,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/059/">०५९ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1610,7 +1612,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/060/">०६० </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1633,7 +1635,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/061/">०६१ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1656,7 +1658,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/062/">०६२ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1679,7 +1681,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/063/">०६३ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1702,7 +1704,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/064/">०६४ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1725,7 +1727,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/065/">०६५ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1748,7 +1750,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/066/">०६६ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1771,7 +1773,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/067/">०६७ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1794,7 +1796,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/068/">०६८ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1817,7 +1819,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/069/">०६९ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1840,7 +1842,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/070/">०७० </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1863,7 +1865,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/072/">०७२ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1886,7 +1888,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/073/">०७३ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1909,7 +1911,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/074/">०७४ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1932,7 +1934,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/075/">०७५ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1955,7 +1957,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/076/">०७६ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1978,7 +1980,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/077/">०७७ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2001,7 +2003,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/078/">०७८ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2024,7 +2026,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/079/">०७९ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2047,7 +2049,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/080/">०८० </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2070,7 +2072,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/081/">०८१ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2093,7 +2095,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/082/">०८२ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2116,7 +2118,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/083/">०८३ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2139,7 +2141,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/084/">०८४ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2162,7 +2164,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/085/">०८५ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2185,7 +2187,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/086/">०८६ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2208,7 +2210,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/087/">०८७ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2231,7 +2233,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/088/">०८८ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2254,7 +2256,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/089/">०८९ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2277,7 +2279,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/090/">०९० </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2300,7 +2302,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/091/">०९१ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2323,7 +2325,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/092/">०९२ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2346,7 +2348,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/093/">०९३ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2369,7 +2371,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/094/">०९४ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2392,7 +2394,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/095/">०९५ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2415,7 +2417,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/096/">०९६ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2438,7 +2440,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/097/">०९७ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2461,7 +2463,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/098/">०९८ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2484,7 +2486,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/099/">०९९ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2507,7 +2509,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/100/">१०० </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2530,7 +2532,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/101/">१०१ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2553,7 +2555,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/102/">१०२ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2576,7 +2578,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/103/">१०३ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2599,7 +2601,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/104/">१०४ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2622,7 +2624,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/105/">१०५ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2645,7 +2647,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/106/">१०६ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2668,7 +2670,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/107/">१०७ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2691,7 +2693,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/108/">१०८ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2714,7 +2716,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/109/">१०९ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2737,7 +2739,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/110/">११० </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2760,7 +2762,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/111/">१११ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2783,7 +2785,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/112/">११२ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2806,7 +2808,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/113/">११३ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2829,7 +2831,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/114/">११४ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2852,7 +2854,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/115/">११५ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2875,7 +2877,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/116/">११६ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2898,7 +2900,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/117/">११७ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2921,7 +2923,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/118/">११८ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2944,7 +2946,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/119/">११९ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2967,7 +2969,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/120/">१२० </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2990,7 +2992,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/121/">१२१ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3013,7 +3015,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/122/">१२२ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3036,7 +3038,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/123/">१२३ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3059,7 +3061,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/124/">१२४ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3082,7 +3084,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/125/">१२५ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3105,7 +3107,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/126/">१२६ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3128,7 +3130,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/127/">१२७ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3151,7 +3153,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/128/">१२८ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3174,7 +3176,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/129/">१२९ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3197,7 +3199,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/130/">१३० </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3220,7 +3222,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/131/">१३१ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3243,7 +3245,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/132/">१३२ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3266,7 +3268,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/133/">१३३ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3289,7 +3291,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/134/">१३४ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3312,7 +3314,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/135/">१३५ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3335,7 +3337,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/136/">१३६ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3358,7 +3360,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/137/">१३७ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3381,7 +3383,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/138/">१३८ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3404,7 +3406,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/139/">१३९ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3427,7 +3429,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/140/">१४० </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3450,7 +3452,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/141/">१४१ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3473,7 +3475,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/142/">१४२ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3496,7 +3498,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/143/">१४३ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3519,7 +3521,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/144/">१४४ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3542,7 +3544,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/145/">१४५ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3565,7 +3567,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/146/">१४६ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3588,7 +3590,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/147/">१४७ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3611,7 +3613,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/148/">१४८ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3634,7 +3636,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/149/">१४९ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3657,7 +3659,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/150/">१५० </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3680,7 +3682,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/151/">१५१ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3703,7 +3705,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/152/">१५२ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3726,7 +3728,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/153/">१५३ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3749,7 +3751,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/154/">१५४ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3772,7 +3774,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/155/">१५५ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3795,7 +3797,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/156/">१५६ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3818,7 +3820,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/157/">१५७ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3841,7 +3843,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/158/">१५८ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3864,7 +3866,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/159/">१५९ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3887,7 +3889,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/160/">१६० </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3910,7 +3912,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/161/">१६१ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3933,7 +3935,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/162/">१६२ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3956,7 +3958,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/163/">१६३ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3979,7 +3981,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/164/">१६४ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4002,7 +4004,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/165/">१६५ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4025,7 +4027,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/166/">१६६ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4048,7 +4050,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/167/">१६७ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4071,7 +4073,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/168/">१६८ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4094,7 +4096,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/169/">१६९ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4117,7 +4119,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/170/">१७० </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4140,7 +4142,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/171/">१७१ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4163,7 +4165,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/172/">१७२ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4186,7 +4188,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/173/">१७३ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4209,7 +4211,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/174/">१७४ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4232,7 +4234,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/175/">१७५ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4255,7 +4257,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/176/">१७६ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4278,7 +4280,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/177/">१७७ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4301,7 +4303,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/178/">१७८ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4324,7 +4326,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/179/">१७९ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4347,7 +4349,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/180/">१८० </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4370,7 +4372,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/181/">१८१ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4393,7 +4395,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/182/">१८२ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4416,7 +4418,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/183/">१८३ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4439,7 +4441,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/184/">१८४ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4462,7 +4464,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/185/">१८५ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4485,7 +4487,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/186/">१८६ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4508,7 +4510,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/187/">१८७ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4531,7 +4533,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/188/">१८८ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4554,7 +4556,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/189/">१८९ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4577,7 +4579,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/190/">१९० </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4600,7 +4602,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/191/">१९१ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4623,7 +4625,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/192/">१९२ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4646,7 +4648,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/193/">१९३ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4669,7 +4671,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/194/">१९४ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4692,7 +4694,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/195/">१९५ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4715,7 +4717,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/196/">१९६ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4738,7 +4740,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/197/">१९७ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4761,7 +4763,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/198/">१९८ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4784,7 +4786,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/199/">१९९ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4807,7 +4809,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/200/">२०० </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4830,7 +4832,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/201/">२०१ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4853,7 +4855,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/202/">२०२ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4876,7 +4878,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/203/">२०३ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4899,7 +4901,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/204/">२०४ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4922,7 +4924,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/205/">२०५ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4945,7 +4947,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/207/">२०७ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4968,7 +4970,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/208/">२०८ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -4991,7 +4993,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/209/">२०९ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -5014,7 +5016,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/210/">२१० </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -5037,7 +5039,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/211/">२११ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -5060,7 +5062,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/212/">२१२ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -5083,7 +5085,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/213/">२१३ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -5106,7 +5108,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/214/">२१४ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -5129,7 +5131,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/brAhma/yoga-vAsiShTha-shAstram/Ananda-bodhendra-TIkA/6_nirvANa-prakaraNam/2/215/">२१५ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -5169,7 +5171,7 @@
     <a class="btn btn-secondary" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
     <div class="btn small border">
       
-      <a href="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml"><img src="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml/badge.svg"> Built </a> on 2022 Feb 7 14:57:00 UTC. (<a href="http://google.com/search?q=14%3a57%3a00%20UTC to IST">IST</a>)
+      <a href="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml"><img src="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml/badge.svg"> Built </a> on 2022 Feb 9 10:11:00 UTC. (<a href="http://google.com/search?q=10%3a11%3a00%20UTC to IST">IST</a>)
     </div>
   <ul id="footer-bar-right-custom" class="list-group list-group-horizontal">
   </ul>

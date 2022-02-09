@@ -132,7 +132,7 @@
 
 
     
-<header class="p-1 bg-yellow">
+<header class="p-1 bg-yellow noPrint">
     <nav role="navigation">
       <div id="div_top_bar" class="row">
         <div class="col-md-3 justify-content-start">
@@ -142,7 +142,7 @@
         </div>
         <div id="div_top_bar_right" class="col-md-auto d-flex justify-content-center">
           ✍
-          <select name="transliterationDropdown" size="1" onchange="module_transliteration.updateTransliteration()">
+          <select id="transliterationDropdown" size="1" onchange="module_transliteration.updateTransliteration()">
             <optgroup label="🌍">
               <option value="iso">āISO</option>
               <option value="cyrillic">пу</option>
@@ -175,16 +175,18 @@
             </optgroup>
           </select>
           🗨:
-          <select name="commentStyleDropdown" size="1" onchange="module_main.default.updateCommentStyleFromDropdown()">
+          <select id="commentStyleDropdown" size="1" onchange="module_main.default.updateCommentStyleFromDropdown()">
             <option value="on">✔</option>
             <option value="hidden">✗</option>
           </select>
-          <div><a  name="speakerButton" class="btn btn-secondary" onclick="module_main.default.handleSpeakToggle()">🎧️</a></div>
+          <div><a id="expandAllButton" class="btn btn-secondary" onclick="module_main.default.query.setParamAndGo('expandAll', 'true')">↕️️</a></div>
+          <div><a id="printButton" class="btn btn-secondary" onclick="module_main.default.query.setParamAndGo('printLayout', 'on')">🖨️️</a></div>
+          <div><a id="speakerButton" class="btn btn-secondary" onclick="module_main.default.handleSpeakToggle()">🎧️</a></div>
         </div>
         <div class="row col  d-flex justify-content-center">
           <a href="/full_search"  class="btn btn-secondary">🥽🔦</a>
-          <div><a  name="previousPage" href="" class="btn btn-secondary">###<i class="fas fa-caret-left"></i></a></div>
-          <div ><a name="nextPage" href="" class="btn btn-secondary"><i class="fas fa-caret-right"></i> ### </a></div>
+          <div><a id="previousPage" href="" class="btn btn-secondary">###<i class="fas fa-caret-left"></i></a></div>
+          <div ><a id="nextPage" href="" class="btn btn-secondary"><i class="fas fa-caret-right"></i> ### </a></div>
         </div>
         <ul id="top-bar-right-custom" class="list-group list-group-horizontal">
         </ul>
@@ -195,7 +197,7 @@
     
     <div class="row" name="contentRow">
       
-      <aside class="col-md-3 card border " id="sidebar">
+      <aside class="col-md-3 card border noPrint " id="sidebar">
           <div id="fastSearch">
               <input id="searchInput" placeholder="शीर्षिकान्विष्यताम्"  tabindex="0">
           </div>
@@ -213,12 +215,12 @@
 <header class='border d-flex justify-content-between'>
     <h1 id="&#43;परिष्कार्यम्">&#43;परिष्कार्यम्</h1>
     
-    <a id="editLink" class="btn btn-primary"  href="https://github.com/vishvAsa/AgamaH/edit/content/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/_index.md"><i class="fas fa-edit"></i></a>
+    <a id="editLink" class="btn btn-primary noPrint"  href="https://github.com/vishvAsa/AgamaH/edit/content/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/_index.md"><i class="fas fa-edit"></i></a>
     
 </header>
 <main>
     <article>
-  <aside id="toc_card" class="card border ">
+  <aside id="toc_card" class="card border noPrint ">
     <div id="toc_header" class="card-title border d-flex justify-content-between">
         <a data-toggle="collapse" href="#toc_body" role="button" aria-expanded="true" aria-controls="toc_body">
           What's in this page? <i class="fas fa-caret-down"></i> </a>
@@ -246,7 +248,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/">&#43;परिष्कार्यम् </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -274,7 +276,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/chaturvedi-rAdheshyAmaH/">&#43;चतुर्वेदि-राधेश्यामः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -299,7 +301,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/paramahaMsa-mishraH/">&#43;परमहंस-मिश्रः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -332,7 +334,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/chaturvedi-rAdheshyAmaH/">&#43;चतुर्वेदि-राधेश्यामः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -360,7 +362,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/chaturvedi-rAdheshyAmaH/p1_01-03/">&#43;०१-०३ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -385,7 +387,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/chaturvedi-rAdheshyAmaH/p2_04-07/">&#43;०४-०७ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -410,7 +412,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/chaturvedi-rAdheshyAmaH/p3_08-10/">&#43;०८-१० </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -435,7 +437,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/chaturvedi-rAdheshyAmaH/p4_11-20/">&#43;११-२० </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -460,7 +462,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/chaturvedi-rAdheshyAmaH/p5_21-37/">&#43;२१-३७ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -493,7 +495,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/chaturvedi-rAdheshyAmaH/p1_01-03/">&#43;०१-०३ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -521,7 +523,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/chaturvedi-rAdheshyAmaH/p1_01-03/01/">०१ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -544,7 +546,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/chaturvedi-rAdheshyAmaH/p1_01-03/02/">०२ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -567,7 +569,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/chaturvedi-rAdheshyAmaH/p1_01-03/03/">०३ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -604,7 +606,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/chaturvedi-rAdheshyAmaH/p2_04-07/">&#43;०४-०७ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -632,7 +634,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/chaturvedi-rAdheshyAmaH/p2_04-07/04/">०४ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -655,7 +657,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/chaturvedi-rAdheshyAmaH/p2_04-07/05/">०५ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -678,7 +680,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/chaturvedi-rAdheshyAmaH/p2_04-07/06/">०६ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -701,7 +703,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/chaturvedi-rAdheshyAmaH/p2_04-07/07/">०७ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -738,7 +740,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/chaturvedi-rAdheshyAmaH/p3_08-10/">&#43;०८-१० </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -766,7 +768,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/chaturvedi-rAdheshyAmaH/p3_08-10/08/">०८ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -789,7 +791,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/chaturvedi-rAdheshyAmaH/p3_08-10/09/">०९ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -812,7 +814,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/chaturvedi-rAdheshyAmaH/p3_08-10/10/">१० </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -849,7 +851,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/chaturvedi-rAdheshyAmaH/p4_11-20/">&#43;११-२० </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -877,7 +879,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/chaturvedi-rAdheshyAmaH/p4_11-20/11/">११ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -900,7 +902,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/chaturvedi-rAdheshyAmaH/p4_11-20/12/">१२ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -923,7 +925,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/chaturvedi-rAdheshyAmaH/p4_11-20/13/">१३ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -946,7 +948,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/chaturvedi-rAdheshyAmaH/p4_11-20/14/">१४ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -969,7 +971,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/chaturvedi-rAdheshyAmaH/p4_11-20/15/">१५ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -992,7 +994,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/chaturvedi-rAdheshyAmaH/p4_11-20/16/">१६ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1015,7 +1017,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/chaturvedi-rAdheshyAmaH/p4_11-20/17/">१७ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1038,7 +1040,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/chaturvedi-rAdheshyAmaH/p4_11-20/18/">१८ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1061,7 +1063,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/chaturvedi-rAdheshyAmaH/p4_11-20/19/">१९ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1084,7 +1086,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/chaturvedi-rAdheshyAmaH/p4_11-20/20/">२० </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1121,7 +1123,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/chaturvedi-rAdheshyAmaH/p5_21-37/">&#43;२१-३७ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1149,7 +1151,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/chaturvedi-rAdheshyAmaH/p5_21-37/parishiShTa/">परिशिष्ट </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1172,7 +1174,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/chaturvedi-rAdheshyAmaH/p5_21-37/21/">२१ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1195,7 +1197,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/chaturvedi-rAdheshyAmaH/p5_21-37/22/">२२ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1218,7 +1220,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/chaturvedi-rAdheshyAmaH/p5_21-37/23/">२३ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1241,7 +1243,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/chaturvedi-rAdheshyAmaH/p5_21-37/24/">२४ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1264,7 +1266,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/chaturvedi-rAdheshyAmaH/p5_21-37/25/">२५ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1287,7 +1289,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/chaturvedi-rAdheshyAmaH/p5_21-37/26/">२६ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1310,7 +1312,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/chaturvedi-rAdheshyAmaH/p5_21-37/27/">२७ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1333,7 +1335,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/chaturvedi-rAdheshyAmaH/p5_21-37/28/">२८ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1356,7 +1358,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/chaturvedi-rAdheshyAmaH/p5_21-37/29/">२९ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1379,7 +1381,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/chaturvedi-rAdheshyAmaH/p5_21-37/30/">३० </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1402,7 +1404,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/chaturvedi-rAdheshyAmaH/p5_21-37/31/">३१ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1425,7 +1427,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/chaturvedi-rAdheshyAmaH/p5_21-37/32/">३२ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1448,7 +1450,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/chaturvedi-rAdheshyAmaH/p5_21-37/33/">३३ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1471,7 +1473,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/chaturvedi-rAdheshyAmaH/p5_21-37/34/">३४ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1494,7 +1496,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/chaturvedi-rAdheshyAmaH/p5_21-37/35/">३५ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1517,7 +1519,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/chaturvedi-rAdheshyAmaH/p5_21-37/36/">३६ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1540,7 +1542,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/chaturvedi-rAdheshyAmaH/p5_21-37/37/">३७ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1583,7 +1585,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/paramahaMsa-mishraH/">&#43;परमहंस-मिश्रः </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1611,7 +1613,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/paramahaMsa-mishraH/p1_01-03/">&#43;०१-०३ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1636,7 +1638,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/paramahaMsa-mishraH/p2_04-07/">&#43;०४-०७ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1661,7 +1663,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/paramahaMsa-mishraH/p3_08-09/">&#43;०८-०९ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1686,7 +1688,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/paramahaMsa-mishraH/p4_10-13/">&#43;१०-१३ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1711,7 +1713,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/paramahaMsa-mishraH/p5_14-15/">&#43;१४-१५ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1736,7 +1738,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/paramahaMsa-mishraH/p6_16-27/">&#43;१६-२७ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1761,7 +1763,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/paramahaMsa-mishraH/p7_28-29/">&#43;२८-२९ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1786,7 +1788,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/paramahaMsa-mishraH/p8_30-37_pariShiShTAni/">&#43;३०-३७ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1819,7 +1821,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/paramahaMsa-mishraH/p1_01-03/">&#43;०१-०३ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1847,7 +1849,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/paramahaMsa-mishraH/p1_01-03/shiShTam/">शिष्टम् </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1870,7 +1872,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/paramahaMsa-mishraH/p1_01-03/01/">०१ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1893,7 +1895,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/paramahaMsa-mishraH/p1_01-03/02/">०२ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1916,7 +1918,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/paramahaMsa-mishraH/p1_01-03/03/">०३ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1953,7 +1955,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/paramahaMsa-mishraH/p2_04-07/">&#43;०४-०७ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -1981,7 +1983,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/paramahaMsa-mishraH/p2_04-07/shiShTam/">शिष्टम् </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2004,7 +2006,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/paramahaMsa-mishraH/p2_04-07/04/">०४ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2027,7 +2029,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/paramahaMsa-mishraH/p2_04-07/05/">०५ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2050,7 +2052,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/paramahaMsa-mishraH/p2_04-07/06/">०६ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2073,7 +2075,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/paramahaMsa-mishraH/p2_04-07/07/">०७ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2110,7 +2112,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/paramahaMsa-mishraH/p3_08-09/">&#43;०८-०९ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2138,7 +2140,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/paramahaMsa-mishraH/p3_08-09/shiShTam/">शिष्टम् </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2161,7 +2163,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/paramahaMsa-mishraH/p3_08-09/08/">०८ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2184,7 +2186,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/paramahaMsa-mishraH/p3_08-09/09/">०९ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2221,7 +2223,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/paramahaMsa-mishraH/p4_10-13/">&#43;१०-१३ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2249,7 +2251,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/paramahaMsa-mishraH/p4_10-13/shiShTam/">शिष्टम् </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2272,7 +2274,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/paramahaMsa-mishraH/p4_10-13/10/">१० </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2295,7 +2297,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/paramahaMsa-mishraH/p4_10-13/11/">११ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2318,7 +2320,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/paramahaMsa-mishraH/p4_10-13/12/">१२ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2341,7 +2343,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/paramahaMsa-mishraH/p4_10-13/13/">१३ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2378,7 +2380,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/paramahaMsa-mishraH/p5_14-15/">&#43;१४-१५ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2406,7 +2408,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/paramahaMsa-mishraH/p5_14-15/shiShTam/">शिष्टम् </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2429,7 +2431,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/paramahaMsa-mishraH/p5_14-15/14/">१४ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2452,7 +2454,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/paramahaMsa-mishraH/p5_14-15/15/">१५ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2489,7 +2491,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/paramahaMsa-mishraH/p6_16-27/">&#43;१६-२७ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2517,7 +2519,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/paramahaMsa-mishraH/p6_16-27/shiShTam/">शिष्टम् </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2540,7 +2542,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/paramahaMsa-mishraH/p6_16-27/16/">१६ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2563,7 +2565,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/paramahaMsa-mishraH/p6_16-27/17/">१७ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2586,7 +2588,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/paramahaMsa-mishraH/p6_16-27/18/">१८ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2609,7 +2611,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/paramahaMsa-mishraH/p6_16-27/19/">१९ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2632,7 +2634,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/paramahaMsa-mishraH/p6_16-27/20/">२० </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2655,7 +2657,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/paramahaMsa-mishraH/p6_16-27/21/">२१ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2678,7 +2680,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/paramahaMsa-mishraH/p6_16-27/22/">२२ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2701,7 +2703,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/paramahaMsa-mishraH/p6_16-27/23/">२३ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2724,7 +2726,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/paramahaMsa-mishraH/p6_16-27/24/">२४ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2747,7 +2749,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/paramahaMsa-mishraH/p6_16-27/25/">२५ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2770,7 +2772,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/paramahaMsa-mishraH/p6_16-27/26/">२६ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2793,7 +2795,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/paramahaMsa-mishraH/p6_16-27/27/">२७ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2830,7 +2832,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/paramahaMsa-mishraH/p7_28-29/">&#43;२८-२९ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2858,7 +2860,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/paramahaMsa-mishraH/p7_28-29/shiShTam/">शिष्टम् </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2881,7 +2883,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/paramahaMsa-mishraH/p7_28-29/28/">२८ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2904,7 +2906,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/paramahaMsa-mishraH/p7_28-29/29/">२९ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2941,7 +2943,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/paramahaMsa-mishraH/p8_30-37_pariShiShTAni/">&#43;३०-३७ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2969,7 +2971,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/paramahaMsa-mishraH/p8_30-37_pariShiShTAni/shiShTam/">शिष्टम् </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -2992,7 +2994,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/paramahaMsa-mishraH/p8_30-37_pariShiShTAni/30/">३० </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3015,7 +3017,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/paramahaMsa-mishraH/p8_30-37_pariShiShTAni/31/">३१ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3038,7 +3040,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/paramahaMsa-mishraH/p8_30-37_pariShiShTAni/32/">३२ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3061,7 +3063,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/paramahaMsa-mishraH/p8_30-37_pariShiShTAni/33/">३३ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3084,7 +3086,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/paramahaMsa-mishraH/p8_30-37_pariShiShTAni/34/">३४ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3107,7 +3109,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/paramahaMsa-mishraH/p8_30-37_pariShiShTAni/35/">३५ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3130,7 +3132,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/paramahaMsa-mishraH/p8_30-37_pariShiShTAni/36/">३६ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3153,7 +3155,7 @@
 
 
 
-<aside class="card border" id="section-tree-item-">
+<aside class="card border noPrint" id="section-tree-item-">
     <div class="card-title bg-light-gray border d-flex justify-content-between">
         <a href="https://vishvAsa.github.io/AgamaH/AryaH/hinduism/branches/shaivaH/trikam/abhinavagupta-mUlam/tantrAlokaH/pariShkAryam/paramahaMsa-mishraH/p8_30-37_pariShiShTAni/37/">३७ </a>
         <a data-toggle="collapse" href="#section-tree-item-body-" role="button" aria-expanded="false" aria-controls="section-tree-item-body-" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
@@ -3205,7 +3207,7 @@
     <a class="btn btn-secondary" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
     <div class="btn small border">
       
-      <a href="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml"><img src="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml/badge.svg"> Built </a> on 2022 Feb 7 14:57:00 UTC. (<a href="http://google.com/search?q=14%3a57%3a00%20UTC to IST">IST</a>)
+      <a href="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml"><img src="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml/badge.svg"> Built </a> on 2022 Feb 9 10:11:00 UTC. (<a href="http://google.com/search?q=10%3a11%3a00%20UTC to IST">IST</a>)
     </div>
   <ul id="footer-bar-right-custom" class="list-group list-group-horizontal">
   </ul>
