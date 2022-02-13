@@ -206,14 +206,13 @@
           <div id="fastSearch">
               <input id="searchInput" placeholder="शीर्षिकान्विष्यताम्"  tabindex="0">
           </div>
-          <div id="sidebarTitle" class="card-title bg-light-gray border d-flex justify-content-between" >
-          <a name="sidebarToggleLink" data-toggle="collapse" href="#sidebar_body" role="button" aria-expanded="true" aria-controls="sidebar_body" onclick="module_main.default.sidebarToggleHandler()">
-            Menu <i class="fas fa-caret-down"></i></a>
-        </div>
-        <nav class="card-body p-0 collapse show" id="sidebar_body">
-          <ul id="displayed_sidebar" class="list pl2 p-2 bg-yellow">
-        </ul>
-        </nav>
+          <details open  class="bg-light-gray" >
+              <summary id="sidebarToggleLink" onclick="module_main.default.sidebarToggleHandler()">
+            Menu
+              </summary>
+              <ul id="sidebarBody" class="list pl2 p-0 bg-yellow">
+              </ul>
+          </details>
       </aside>
       <main class="col p-3" role="main">
         
@@ -225,15 +224,14 @@
 </header>
 <article>
   <aside id="toc_card" class="card border noPrint ">
-    <div id="toc_header" class="card-title border d-flex justify-content-between">
-        <a data-toggle="collapse" href="#toc_body" role="button" aria-expanded="true" aria-controls="toc_body">
-          What's in this page? <i class="fas fa-caret-down"></i> </a>
-    </div>
-    <div id="toc_body" class="card-body collapse p-0">
-      
-      <ul id="toc_ul" class="list p-0">
-      </ul>
-    </div>
+    <details id="toc_header">
+        <summary>What's in this page?</summary>
+      <div id="toc_body" class="p-0">
+        
+        <ul id="toc_ul" class="list p-0">
+        </ul>
+      </div>
+    </details>
   </aside>
   <div id="post_content">
   <p>Because possession is deeply embedded in the complexities of local culture and ritual, it is important to exercise caution in formulating general theories about it.23 Although it is not my intention to present a general theory, it is nevertheless necessary to present different viewpoints regarding possession, particularly because most available theories have been applied to possession in India. To begin, the interpretation of possession as the work of demonic, ungodly beings is characteristically the property of certain Western Christian, usually Protestant, denominations, though, as shown below, South Asians themselves often enough accuse tantrikas in the temporary employ of local enemies of setting malevolent spirits on family members afflicted with mental illness. Commenting on studies of possession, though not singling out Christian perspectives, Nicholas Dirks comments: “Most of the literature on possession deals with the nasty kind, when it is the devil rather than the lord who has taken up residence within our mortal coil.”24 This may be stretching it a bit, especially given the explosion of possession studies among anthropologists since the 1960s. But it does constitute a well-represented viewpoint commonly invoked until the mid-twentieth century, one that has not been completely abandoned. It is more accurate to agree with Isabelle Nabokov, who observes that despite Christian missionary accounts of possession as “replete with prejudicial interpretations and factual errors, they still disclose a vibrant, well-established tradition of boundary transgressions between this world and the hereafter.”25</p>
@@ -286,7 +284,7 @@
     <a class="btn btn-secondary" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
     <div class="btn small border">
       
-      <a href="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml"><img src="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml/badge.svg"> Built </a> on 2022 Feb 10 07:14:41 UTC. (<a href="http://google.com/search?q=07%3a14%3a41%20UTC to IST">IST</a>)
+      <a href="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml"><img src="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml/badge.svg"> Built </a> on 2022 Feb 13 17:37:34 UTC. (<a href="http://google.com/search?q=17%3a37%3a34%20UTC to IST">IST</a>)
     </div>
   <ul id="footer-bar-right-custom" class="list-group list-group-horizontal">
   </ul>

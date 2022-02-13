@@ -206,14 +206,13 @@
           <div id="fastSearch">
               <input id="searchInput" placeholder="शीर्षिकान्विष्यताम्"  tabindex="0">
           </div>
-          <div id="sidebarTitle" class="card-title bg-light-gray border d-flex justify-content-between" >
-          <a name="sidebarToggleLink" data-toggle="collapse" href="#sidebar_body" role="button" aria-expanded="true" aria-controls="sidebar_body" onclick="module_main.default.sidebarToggleHandler()">
-            Menu <i class="fas fa-caret-down"></i></a>
-        </div>
-        <nav class="card-body p-0 collapse show" id="sidebar_body">
-          <ul id="displayed_sidebar" class="list pl2 p-2 bg-yellow">
-        </ul>
-        </nav>
+          <details open  class="bg-light-gray" >
+              <summary id="sidebarToggleLink" onclick="module_main.default.sidebarToggleHandler()">
+            Menu
+              </summary>
+              <ul id="sidebarBody" class="list pl2 p-0 bg-yellow">
+              </ul>
+          </details>
       </aside>
       <main class="col p-3" role="main">
         
@@ -225,15 +224,14 @@
 </header>
 <article>
   <aside id="toc_card" class="card border noPrint ">
-    <div id="toc_header" class="card-title border d-flex justify-content-between">
-        <a data-toggle="collapse" href="#toc_body" role="button" aria-expanded="true" aria-controls="toc_body">
-          What's in this page? <i class="fas fa-caret-down"></i> </a>
-    </div>
-    <div id="toc_body" class="card-body collapse p-0">
-      
-      <ul id="toc_ul" class="list p-0">
-      </ul>
-    </div>
+    <details id="toc_header">
+        <summary>What's in this page?</summary>
+      <div id="toc_body" class="p-0">
+        
+        <ul id="toc_ul" class="list p-0">
+        </ul>
+      </div>
+    </details>
   </aside>
   <div id="post_content">
   <p>Of the two primary divisions of possession, involuntary and voluntary, the former found textual bases principally in the specialized fields of āyurvedic and tantric exorcistic literature.24 However, voluntary possession, particularly that with an oracular component, appears to have been regarded as more suitable material for textuality. Two reasons may be cited for this. First, because it could be practiced, hence prescribed—and, in general, prescription was formalized through literary production. Precedents for the commission of such material to the written word are found in the literature on omens and portents, dating back to the Vedic vidhāna literature,25 scattered passages from the Sanskrit epics, and the landmark works of the astrologer and mathematician Varāhamihira around 550 C.E.26 In addition, possession was experienced as a symptom of tantric initiation, as we have seen, and for this reason it took on greater soteriological, hence literary, urgency.27 Its commission to textuality was part of an ongoing process of domesticating the ever-receding fringe, part of the expansion of Sanskritic culture into new areas of discourse that extended from the periphery to the center. This is likely a case of Sanskritization in which popular practice was brought into the realm of brahmanical orthodoxy, albeit to a place on the fringe of such orthodoxy. Sanskritization in this case might have also mitigated the threat possession presented to more normative brahmanical orthodoxy.28 This threat was of a total and unrecognizable transcendence that undermined orthodox notions of purity and an independent and impermeable ātman or self. Transcendence achieved during a state of full possession, known to many but experienced by relatively few,29 not only eroded confidence in a stable self, which now hosted other voices, but also annihilated the wellformed and complex personality, the carefully, if culturally, crafted person that served as custodian to the self. Thus, possession negated both the metaphysical and social entities, the self and the person.30</p>
@@ -288,7 +286,7 @@
     <a class="btn btn-secondary" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
     <div class="btn small border">
       
-      <a href="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml"><img src="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml/badge.svg"> Built </a> on 2022 Feb 10 07:14:41 UTC. (<a href="http://google.com/search?q=07%3a14%3a41%20UTC to IST">IST</a>)
+      <a href="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml"><img src="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml/badge.svg"> Built </a> on 2022 Feb 13 17:37:34 UTC. (<a href="http://google.com/search?q=17%3a37%3a34%20UTC to IST">IST</a>)
     </div>
   <ul id="footer-bar-right-custom" class="list-group list-group-horizontal">
   </ul>

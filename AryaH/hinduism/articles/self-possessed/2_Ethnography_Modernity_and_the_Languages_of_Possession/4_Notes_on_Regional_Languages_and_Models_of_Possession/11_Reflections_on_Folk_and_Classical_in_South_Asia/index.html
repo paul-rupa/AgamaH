@@ -206,14 +206,13 @@
           <div id="fastSearch">
               <input id="searchInput" placeholder="शीर्षिकान्विष्यताम्"  tabindex="0">
           </div>
-          <div id="sidebarTitle" class="card-title bg-light-gray border d-flex justify-content-between" >
-          <a name="sidebarToggleLink" data-toggle="collapse" href="#sidebar_body" role="button" aria-expanded="true" aria-controls="sidebar_body" onclick="module_main.default.sidebarToggleHandler()">
-            Menu <i class="fas fa-caret-down"></i></a>
-        </div>
-        <nav class="card-body p-0 collapse show" id="sidebar_body">
-          <ul id="displayed_sidebar" class="list pl2 p-2 bg-yellow">
-        </ul>
-        </nav>
+          <details open  class="bg-light-gray" >
+              <summary id="sidebarToggleLink" onclick="module_main.default.sidebarToggleHandler()">
+            Menu
+              </summary>
+              <ul id="sidebarBody" class="list pl2 p-0 bg-yellow">
+              </ul>
+          </details>
       </aside>
       <main class="col p-3" role="main">
         
@@ -225,15 +224,14 @@
 </header>
 <article>
   <aside id="toc_card" class="card border noPrint ">
-    <div id="toc_header" class="card-title border d-flex justify-content-between">
-        <a data-toggle="collapse" href="#toc_body" role="button" aria-expanded="true" aria-controls="toc_body">
-          What's in this page? <i class="fas fa-caret-down"></i> </a>
-    </div>
-    <div id="toc_body" class="card-body collapse p-0">
-      
-      <ul id="toc_ul" class="list p-0">
-      </ul>
-    </div>
+    <details id="toc_header">
+        <summary>What's in this page?</summary>
+      <div id="toc_body" class="p-0">
+        
+        <ul id="toc_ul" class="list p-0">
+        </ul>
+      </div>
+    </details>
   </aside>
   <div id="post_content">
   <p>From the foregoing discussion of lexemes and terms in many South Asian languages, one conclusion is unavoidable: that with a few notable exceptions the expansion of the lexicon for possession—and, we might cautiously presume, many of the ideologies behind this expansion—was to a great extent derived from Sanskrit and Sanskritic culture, after which it became diversified and adapted into regional languages. Despite this conclusion, the ethnographies highlight the non-brahmanical, non-Sanskritic dimensions of possession and the rejection of clerical authority in favor of a nonmediated transcendence or, at most, a transcendence that is sanctioned—and, therefore, in a sense mediated—by the dynamics of the local culture. Locally construed possession is, furthermore, an irruption of assigned hierarchical place that bears with it a consequent identification with nonhierarchical sacred place—indeed, of the individual as sacred place. Hence, it is an assertion that possession is largely the experiential property (and path) of people of lower social rank, women as well as men. It is regarded, in a critical mass of instances, as a socioreligious innovation of subalterns. Although this may be an overstatement, it is not without basis. After all, the social structure in South Asia hardened into a self-sustaining oppressive force long ago, giving rise to equally self-sustaining forces of reaction that drew form and idiom in part from these forces of oppression. In other words, though the preponderance of the evidence suggests that most possession is an indigenous phenomenon related to brahmanic oppression or “official” brahmanical religion only peripherally,222 in fact, a number of ethnographers (e.g., Sax, Knipe, Claus) have shown that brahmans participate in possession as much as anyone. Thus the “upward” accession of form and idiom is matched by a “downward” accession. As seen below, this is not a recent phenomenon: The evidence adduced from the Sanskrit texts testifies that possession has long been a part of unofficial (and preofficial) brahmanical religion; it was no less a part of Sanskritic culture than was officially engineered brahmanical religion.</p>
@@ -294,7 +292,7 @@
     <a class="btn btn-secondary" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
     <div class="btn small border">
       
-      <a href="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml"><img src="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml/badge.svg"> Built </a> on 2022 Feb 10 07:14:41 UTC. (<a href="http://google.com/search?q=07%3a14%3a41%20UTC to IST">IST</a>)
+      <a href="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml"><img src="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml/badge.svg"> Built </a> on 2022 Feb 13 17:37:34 UTC. (<a href="http://google.com/search?q=17%3a37%3a34%20UTC to IST">IST</a>)
     </div>
   <ul id="footer-bar-right-custom" class="list-group list-group-horizontal">
   </ul>

@@ -209,14 +209,13 @@
           <div id="fastSearch">
               <input id="searchInput" placeholder="शीर्षिकान्विष्यताम्"  tabindex="0">
           </div>
-          <div id="sidebarTitle" class="card-title bg-light-gray border d-flex justify-content-between" >
-          <a name="sidebarToggleLink" data-toggle="collapse" href="#sidebar_body" role="button" aria-expanded="true" aria-controls="sidebar_body" onclick="module_main.default.sidebarToggleHandler()">
-            Menu <i class="fas fa-caret-down"></i></a>
-        </div>
-        <nav class="card-body p-0 collapse show" id="sidebar_body">
-          <ul id="displayed_sidebar" class="list pl2 p-2 bg-yellow">
-        </ul>
-        </nav>
+          <details open  class="bg-light-gray" >
+              <summary id="sidebarToggleLink" onclick="module_main.default.sidebarToggleHandler()">
+            Menu
+              </summary>
+              <ul id="sidebarBody" class="list pl2 p-0 bg-yellow">
+              </ul>
+          </details>
       </aside>
       <main class="col p-3" role="main">
         
@@ -228,15 +227,14 @@
 </header>
 <article>
   <aside id="toc_card" class="card border noPrint ">
-    <div id="toc_header" class="card-title border d-flex justify-content-between">
-        <a data-toggle="collapse" href="#toc_body" role="button" aria-expanded="true" aria-controls="toc_body">
-          What's in this page? <i class="fas fa-caret-down"></i> </a>
-    </div>
-    <div id="toc_body" class="card-body collapse p-0">
-      
-      <ul id="toc_ul" class="list p-0">
-      </ul>
-    </div>
+    <details id="toc_header">
+        <summary>What's in this page?</summary>
+      <div id="toc_body" class="p-0">
+        
+        <ul id="toc_ul" class="list p-0">
+        </ul>
+      </div>
+    </details>
   </aside>
   <div id="post_content">
   <p>ವೈದಿಕವಾಹ್ಮಯದಲ್ಲಿ ಬ್ರಹ್ಮಸೂತ್ರದ ಸ್ಥಾನ ಶ್ರೀಶಂಕರಾಚಾರ್ಯರವರ ಭಾಷ್ಯದೊಡನೆ ಈಗ ಕನ್ನಡಿಸಿ ಪ್ರಕಟಿಸಿರುವ ಗ್ರಂಥವನ್ನು ವೇದಾಂತಸೂತ್ರಗಳು, ವೇದಾಂತಫಾಮಾಂಸ, ಶಾರೀರಕಮಿಾಮಾಂಸ, ವೇದಾಂತದರ್ಶನ - ಎಂಬ ಬೇರೆಬೇರೆಯ ಹೆಸರುಗಳಿಂದ ವಿದ್ವಾಂಸರು ಕರೆಯು ತಾರೆ. ಬ್ರಹ್ಮಸೂತ್ರಗಳೆಂಬ ಹೆಸರು ಈಗ ಸುಪ್ರಸಿದ್ಧವಾಗಿದ್ದರೂ ಈ ಹೆಸರು ಶಾಂಕರಪ್ರಸ್ಥಾನತ್ರಯಭಾಷ್ಯದಲ್ಲಿ ಎಲ್ಲಿಯೂ ಕಾಣುವದಿಲ್ಲ. ಭಗವದ್ಗೀತೆಯಲ್ಲಿ (೧೩-೪) ಕಾಣಬರುವ &lsquo;ಬ್ರಹ್ಮಸೂತ್ರಪದ್ಯಶೈವ&rsquo; ಎಂಬ ಮಾತನ್ನು ವಿವರಿಸುವಾಗ &lsquo;ಆತ್ಮತೇವೋಪಾಸೀತ&rsquo; ಮುಂತಾದ ಬ್ರಹ್ಮವನ್ನು ತಿಳಿಸುವ ಸಂಗ್ರಹವಾಕ್ಯಗಳೇ ಬ್ರಹ್ಮಸೂತ್ರಗಳು - ಎಂದು ಭಾಷ್ಯದಲ್ಲಿ ಬರೆದಿದ.</p>
@@ -408,7 +406,7 @@
     <a class="btn btn-secondary" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
     <div class="btn small border">
       
-      <a href="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml"><img src="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml/badge.svg"> Built </a> on 2022 Feb 10 07:14:41 UTC. (<a href="http://google.com/search?q=07%3a14%3a41%20UTC to IST">IST</a>)
+      <a href="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml"><img src="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml/badge.svg"> Built </a> on 2022 Feb 13 17:37:34 UTC. (<a href="http://google.com/search?q=17%3a37%3a34%20UTC to IST">IST</a>)
     </div>
   <ul id="footer-bar-right-custom" class="list-group list-group-horizontal">
   </ul>

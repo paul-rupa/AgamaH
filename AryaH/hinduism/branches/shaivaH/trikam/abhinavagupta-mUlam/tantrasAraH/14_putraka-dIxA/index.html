@@ -206,14 +206,13 @@
           <div id="fastSearch">
               <input id="searchInput" placeholder="शीर्षिकान्विष्यताम्"  tabindex="0">
           </div>
-          <div id="sidebarTitle" class="card-title bg-light-gray border d-flex justify-content-between" >
-          <a name="sidebarToggleLink" data-toggle="collapse" href="#sidebar_body" role="button" aria-expanded="true" aria-controls="sidebar_body" onclick="module_main.default.sidebarToggleHandler()">
-            Menu <i class="fas fa-caret-down"></i></a>
-        </div>
-        <nav class="card-body p-0 collapse show" id="sidebar_body">
-          <ul id="displayed_sidebar" class="list pl2 p-2 bg-yellow">
-        </ul>
-        </nav>
+          <details open  class="bg-light-gray" >
+              <summary id="sidebarToggleLink" onclick="module_main.default.sidebarToggleHandler()">
+            Menu
+              </summary>
+              <ul id="sidebarBody" class="list pl2 p-0 bg-yellow">
+              </ul>
+          </details>
       </aside>
       <main class="col p-3" role="main">
         
@@ -225,15 +224,14 @@
 </header>
 <article>
   <aside id="toc_card" class="card border noPrint ">
-    <div id="toc_header" class="card-title border d-flex justify-content-between">
-        <a data-toggle="collapse" href="#toc_body" role="button" aria-expanded="true" aria-controls="toc_body">
-          What's in this page? <i class="fas fa-caret-down"></i> </a>
-    </div>
-    <div id="toc_body" class="card-body collapse p-0">
-      
-      <ul id="toc_ul" class="list p-0">
-      </ul>
-    </div>
+    <details id="toc_header">
+        <summary>What's in this page?</summary>
+      <div id="toc_body" class="p-0">
+        
+        <ul id="toc_ul" class="list p-0">
+        </ul>
+      </div>
+    </details>
   </aside>
   <div id="post_content">
   <p>अथ चतुर्दशमाह्निकम् । अथ पुत्रकदीक्षाविधिः । स च विस्तीर्णः तन्त्रालोकात् अवधार्यः | संक्षिप्तस्तु उच्यते । समय्यन्तं विधिं कृत्वा तृतीयेऽह्रि त्रिशुलाब्जे मण्डले सामुदायिकं यागं पूजयेत्, तत्र बाह्यपरिवार द्वारदेवताचक्रं च बहिः पूजयेत्, ततो मण्डलपूर्वभागे ऐशकोणात् आरभ्य आग्नेयान्तं पङ्क्तिक्रमेण गणपतिं गुरुं परमगुरुं परमेष्ठिनं पूर्वाचार्यान् योगिनीचक्रं वागीश्वरी क्षेत्रपालं च पूजयेत् । तत आज्ञां समुचिताम् आदाय शूलमूलात् प्रभृति सितकमलान्तं समस्तम् अध्वानं न्यस्य अर्चयेत्, ततो मध्यमे त्रिशूले मध्यारायां भगवती श्रीपराभट्टारिका भैरवनाथेन सह, वामारायां तथैव श्रीमदपरा, दक्षिणारायां श्रीपरापरा, दक्षिणे त्रिशूले मध्ये श्रीपरापरा, वामे त्रिशूले मध्ये श्रीमदपरा, द्वे तु यथास्वम् । एवं सर्वस्थानाधिष्ठातृत्वे भगवत्याः सर्वं पूर्णं तदधिष्ठानात् भवति इति । ततो मध्यशूलमध्यारायां समस्तं देवताचक्र लोकपालास्त्रपर्यन्तम् अभिन्नतयैव पूजयेत् तदधिष्ठानात् सर्वत्र पूजितम् । ततः कुम्भे कलशे मण्डले अग्नौ स्वात्मनि च अभेदभावनया पञ्चाधिकरणम् अनुसन्धिं कुर्यात्, ततः परमेश्वराद्वयरसबृंहितेन पुष्पादिना विशेषपूजां कुर्यात् ।</p>
@@ -302,7 +300,7 @@
     <a class="btn btn-secondary" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
     <div class="btn small border">
       
-      <a href="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml"><img src="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml/badge.svg"> Built </a> on 2022 Feb 10 07:14:41 UTC. (<a href="http://google.com/search?q=07%3a14%3a41%20UTC to IST">IST</a>)
+      <a href="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml"><img src="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml/badge.svg"> Built </a> on 2022 Feb 13 17:37:34 UTC. (<a href="http://google.com/search?q=17%3a37%3a34%20UTC to IST">IST</a>)
     </div>
   <ul id="footer-bar-right-custom" class="list-group list-group-horizontal">
   </ul>

@@ -206,14 +206,13 @@
           <div id="fastSearch">
               <input id="searchInput" placeholder="शीर्षिकान्विष्यताम्"  tabindex="0">
           </div>
-          <div id="sidebarTitle" class="card-title bg-light-gray border d-flex justify-content-between" >
-          <a name="sidebarToggleLink" data-toggle="collapse" href="#sidebar_body" role="button" aria-expanded="true" aria-controls="sidebar_body" onclick="module_main.default.sidebarToggleHandler()">
-            Menu <i class="fas fa-caret-down"></i></a>
-        </div>
-        <nav class="card-body p-0 collapse show" id="sidebar_body">
-          <ul id="displayed_sidebar" class="list pl2 p-2 bg-yellow">
-        </ul>
-        </nav>
+          <details open  class="bg-light-gray" >
+              <summary id="sidebarToggleLink" onclick="module_main.default.sidebarToggleHandler()">
+            Menu
+              </summary>
+              <ul id="sidebarBody" class="list pl2 p-0 bg-yellow">
+              </ul>
+          </details>
       </aside>
       <main class="col p-3" role="main">
         
@@ -225,15 +224,14 @@
 </header>
 <article>
   <aside id="toc_card" class="card border noPrint ">
-    <div id="toc_header" class="card-title border d-flex justify-content-between">
-        <a data-toggle="collapse" href="#toc_body" role="button" aria-expanded="true" aria-controls="toc_body">
-          What's in this page? <i class="fas fa-caret-down"></i> </a>
-    </div>
-    <div id="toc_body" class="card-body collapse p-0">
-      
-      <ul id="toc_ul" class="list p-0">
-      </ul>
-    </div>
+    <details id="toc_header">
+        <summary>What's in this page?</summary>
+      <div id="toc_body" class="p-0">
+        
+        <ul id="toc_ul" class="list p-0">
+        </ul>
+      </div>
+    </details>
   </aside>
   <div id="post_content">
   <p>अथैकोनविंशमाहिकम् । अथ अधरशासनस्थानां गुर्वन्तानामपि मरणसमनन्तरं मृतोद्धारोदित शक्तिपातयोगादेव अन्त्यसंस्काराख्यां दीक्षां कुर्यात्, ऊर्ध्वशासनस्थानामपि लुप्तसमयानाम् अकृतप्रायश्चित्तानाम् - इति परमेश्वराज्ञा | तत्र यो मृतोद्धारे विधिः उक्तः स सर्व एव शरीरे कर्तव्यः, पूर्णाहुत्या शवशरीरदाहः, मूढानां तु प्रतीतिरूढये सप्रत्ययामन्त्येष्टिं क्रियाज्ञानयोगबलात् कुर्यात्, तत्र शवशरीरे संहारक्रमेण मन्त्रान् न्यस्य जालक्रमेण आकृष्य रोधनवेधनघट्टनादि कुर्यात् - प्राणसंचारक्रमेण हृदि कण्ङ्गे ललाटे च इत्येवं शवशरीरं कम्पते । ततः परमशिवे योजनिकां कृत्वा तत् दहेत् पूर्णाहुत्या, अन्त्येष्ट्या शुद्धानाम् अन्येषामपि वा श्राद्धदीक्षां त्र्यहं तुर्ये दिने मासि मासि संवत्सरे संवत्सरे कुर्यात् । तत्र होमान्तं विधिं कृत्वा नैवेद्यमेकहस्ते कृत्वा तदीयां वीर्यरूपां शक्तिं भोग्याकारां पशुगतभोग्यशक्तितादात्म्यप्रतिपन्नां ध्यात्वा परमेश्वरे भोक्तरि अर्पयेत्, इत्येवं भोग्यभावे निवृत्ते पतिरेव भवति, अन्त्येष्टिमृतोद्धरणश्राद्धदीक्षाणाम् अन्यतमेनापि यद्यपि कृतार्थता तथापि बुभुक्षोः क्रियाभूयस्त्वं फलभूयस्त्वाय इति सर्वमाचरेत् । मुमुक्षोरपि तन्मयिभावसिद्धये अयम् जीवतः प्रत्यहम् अनुष्ठानाभ्यासवत् । तत्त्वज्ञानिनस्तु न कोऽप्ययम् अन्त्येष्ट्यादिश्राद्धान्तो</p>
@@ -294,7 +292,7 @@
     <a class="btn btn-secondary" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
     <div class="btn small border">
       
-      <a href="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml"><img src="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml/badge.svg"> Built </a> on 2022 Feb 10 07:14:41 UTC. (<a href="http://google.com/search?q=07%3a14%3a41%20UTC to IST">IST</a>)
+      <a href="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml"><img src="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml/badge.svg"> Built </a> on 2022 Feb 13 17:37:34 UTC. (<a href="http://google.com/search?q=17%3a37%3a34%20UTC to IST">IST</a>)
     </div>
   <ul id="footer-bar-right-custom" class="list-group list-group-horizontal">
   </ul>

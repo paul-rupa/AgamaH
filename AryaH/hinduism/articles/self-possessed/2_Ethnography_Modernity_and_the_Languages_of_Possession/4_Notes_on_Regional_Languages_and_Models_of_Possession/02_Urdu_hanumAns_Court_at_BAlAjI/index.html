@@ -206,14 +206,13 @@
           <div id="fastSearch">
               <input id="searchInput" placeholder="शीर्षिकान्विष्यताम्"  tabindex="0">
           </div>
-          <div id="sidebarTitle" class="card-title bg-light-gray border d-flex justify-content-between" >
-          <a name="sidebarToggleLink" data-toggle="collapse" href="#sidebar_body" role="button" aria-expanded="true" aria-controls="sidebar_body" onclick="module_main.default.sidebarToggleHandler()">
-            Menu <i class="fas fa-caret-down"></i></a>
-        </div>
-        <nav class="card-body p-0 collapse show" id="sidebar_body">
-          <ul id="displayed_sidebar" class="list pl2 p-2 bg-yellow">
-        </ul>
-        </nav>
+          <details open  class="bg-light-gray" >
+              <summary id="sidebarToggleLink" onclick="module_main.default.sidebarToggleHandler()">
+            Menu
+              </summary>
+              <ul id="sidebarBody" class="list pl2 p-0 bg-yellow">
+              </ul>
+          </details>
       </aside>
       <main class="col p-3" role="main">
         
@@ -225,15 +224,14 @@
 </header>
 <article>
   <aside id="toc_card" class="card border noPrint ">
-    <div id="toc_header" class="card-title border d-flex justify-content-between">
-        <a data-toggle="collapse" href="#toc_body" role="button" aria-expanded="true" aria-controls="toc_body">
-          What's in this page? <i class="fas fa-caret-down"></i> </a>
-    </div>
-    <div id="toc_body" class="card-body collapse p-0">
-      
-      <ul id="toc_ul" class="list p-0">
-      </ul>
-    </div>
+    <details id="toc_header">
+        <summary>What's in this page?</summary>
+      <div id="toc_body" class="p-0">
+        
+        <ul id="toc_ul" class="list p-0">
+        </ul>
+      </div>
+    </details>
   </aside>
   <div id="post_content">
   <p>One of the most striking models of possession and exorcism, in which bhūt-prets play a significant role, occurs in the environs of the Bālājī temple in Mehndipur, Rajasthan, as well as at several other spirit healing centers in India.14 Most of the clients at Bālājī are Hindu, from Hindi-speaking areas of India.15 Yet in a slight acknowledgment to the once-dominant Indo-Islamic culture, the clinical model is replete with Urdu terms. These terms are drawn from the British colonial legal system, which adopted the Persian-Urdu language of the Islamic legal system of the Mughals. This is described in the work of Antti Pakaslahti and Graham Dwyer,16 but a summary is apposite here. The possession/exorcism rituals at Bālājī are not standardized; instead, they bear the distinct imprimatur of different healers and exorcists, almost all of whom work outside the main temple.17 Nevertheless, all the healers situate their exorcisms (bhūt-pret utarṇā)18 in an adālat or Islamic court, drawing their inspiration from the concept utilized at the main temple. This, it is important to note, is not an actual court; rather, it is an envisioned court and background metaphor, employed for instituting their processes of possession, exorcism, and healing.19 The primary deity, Hanumān as Bālājī, is the supreme magistrate. He is assisted by two subordinates, Bhairavjī (the local manifestation of the protector divinity Bhairava) and Pretrāj (King of the Spirits of the Dead), who are Bālājī’s messengers (dūt)—as Hanumān is Rāma’s messenger (dūta). Before visiting the office—usually a small shrine room—of one of the many clinicians in the town, Bālājī is first petitioned (darkhvāst) at the main temple. Whether pilgrim or afflicted petitioner, Bālājī is proffered sweets (laddū), parts of which are offered into a sacred fire (havan) in his name, while the remainder is returned to the client as prosād. After this offering, a larger petition (arzi) of sweets is served to Bhairavjī and Pretrāj in side annexes of the temple, where their shrines are located. Through their consumption of the prasād, the power of the deities is said to be infused into the clients. One or two days later, trance commences, usually during scheduled offerings (ārati) or devotional singing (kīrtan), which may occur in either the main temple or the “office” of the exorcist. This kīrtan (at least at the locale in Bālājī that I observed) consists of deafeningly amplified recordings of devotional singing to the melodies of Hindi film songs.20 This engages the largely Hindu audience21 of spirit afflicted (bhūt-pret kī bīmārī) individuals and their families, who chant along with the music, “Jai Mā, Jai Mā” and so on, and clap rhythmically—some of the standard accoutrements of shamanic “trance” music. The music that most often sends afflicted members of the audience (or concerned relatives) into trance, at least in the adālat that I witnessed, is instrumental “snake-charmer” music from a Hindi film of the late 1980s, Naagin, which, appropriately, inspires some of the possessed to writhe like serpents.</p>
@@ -285,7 +283,7 @@
     <a class="btn btn-secondary" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
     <div class="btn small border">
       
-      <a href="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml"><img src="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml/badge.svg"> Built </a> on 2022 Feb 10 07:14:41 UTC. (<a href="http://google.com/search?q=07%3a14%3a41%20UTC to IST">IST</a>)
+      <a href="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml"><img src="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml/badge.svg"> Built </a> on 2022 Feb 13 17:37:34 UTC. (<a href="http://google.com/search?q=17%3a37%3a34%20UTC to IST">IST</a>)
     </div>
   <ul id="footer-bar-right-custom" class="list-group list-group-horizontal">
   </ul>

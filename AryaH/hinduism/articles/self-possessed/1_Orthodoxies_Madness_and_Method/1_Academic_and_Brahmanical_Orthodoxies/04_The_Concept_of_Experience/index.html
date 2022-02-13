@@ -206,14 +206,13 @@
           <div id="fastSearch">
               <input id="searchInput" placeholder="शीर्षिकान्विष्यताम्"  tabindex="0">
           </div>
-          <div id="sidebarTitle" class="card-title bg-light-gray border d-flex justify-content-between" >
-          <a name="sidebarToggleLink" data-toggle="collapse" href="#sidebar_body" role="button" aria-expanded="true" aria-controls="sidebar_body" onclick="module_main.default.sidebarToggleHandler()">
-            Menu <i class="fas fa-caret-down"></i></a>
-        </div>
-        <nav class="card-body p-0 collapse show" id="sidebar_body">
-          <ul id="displayed_sidebar" class="list pl2 p-2 bg-yellow">
-        </ul>
-        </nav>
+          <details open  class="bg-light-gray" >
+              <summary id="sidebarToggleLink" onclick="module_main.default.sidebarToggleHandler()">
+            Menu
+              </summary>
+              <ul id="sidebarBody" class="list pl2 p-0 bg-yellow">
+              </ul>
+          </details>
       </aside>
       <main class="col p-3" role="main">
         
@@ -225,15 +224,14 @@
 </header>
 <article>
   <aside id="toc_card" class="card border noPrint ">
-    <div id="toc_header" class="card-title border d-flex justify-content-between">
-        <a data-toggle="collapse" href="#toc_body" role="button" aria-expanded="true" aria-controls="toc_body">
-          What's in this page? <i class="fas fa-caret-down"></i> </a>
-    </div>
-    <div id="toc_body" class="card-body collapse p-0">
-      
-      <ul id="toc_ul" class="list p-0">
-      </ul>
-    </div>
+    <details id="toc_header">
+        <summary>What's in this page?</summary>
+      <div id="toc_body" class="p-0">
+        
+        <ul id="toc_ul" class="list p-0">
+        </ul>
+      </div>
+    </details>
   </aside>
   <div id="post_content">
   <p>When I speak of an experience of soma (Chapter 5), a cultural or religious experience, a personal experience, a dissociative experience, and especially an experience of possession, I am employing with apparent ease terminology that hovers on a precipitous edge of ancient and classical Indian discourse maps. No one can doubt that people as well as cultures and civilizations experience in some sense, and that they experience all the time. Several scholars, however, including Wilhelm Halbfass, Wayne Proudfoot, and Robert Sharf, have noted, or even reinforced, certain relatively recent doubts cast on the “notion” of experience, particularly religious experience, positing that its validity can be situated only within highly specified cultural contexts. Halbfass sorts out the concept in Indian thought, particularly in its encounter with Western models of experience,50 while Sharf, following Proudfoot and others, traces the conceptualization of experience to the German philosopher Arthur Schleiermacher in the early nineteenth century and shows that personal religious experience was not an issue of doctrinal concern in the textuality of Asian religions until the early twentieth century.51 Thus, when I speak of experience in the ways mentioned above, am I injecting into the personal and cultural networks of possession in South Asia an epistemology that threatens to bury the subject beneath fragile and dissembling layers of modern discourse? Am I reading possession in South Asia as a servant of the overwrought contemporary, peculiarly Western, discourse of experience? With such dangers in mind, Sharf resolves to employ the term “experience” guardedly.</p>
@@ -282,7 +280,7 @@
     <a class="btn btn-secondary" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
     <div class="btn small border">
       
-      <a href="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml"><img src="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml/badge.svg"> Built </a> on 2022 Feb 10 07:14:41 UTC. (<a href="http://google.com/search?q=07%3a14%3a41%20UTC to IST">IST</a>)
+      <a href="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml"><img src="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml/badge.svg"> Built </a> on 2022 Feb 13 17:37:34 UTC. (<a href="http://google.com/search?q=17%3a37%3a34%20UTC to IST">IST</a>)
     </div>
   <ul id="footer-bar-right-custom" class="list-group list-group-horizontal">
   </ul>

@@ -201,14 +201,13 @@
           <div id="fastSearch">
               <input id="searchInput" placeholder="शीर्षिकान्विष्यताम्"  tabindex="0">
           </div>
-          <div id="sidebarTitle" class="card-title bg-light-gray border d-flex justify-content-between" >
-          <a name="sidebarToggleLink" data-toggle="collapse" href="#sidebar_body" role="button" aria-expanded="true" aria-controls="sidebar_body" onclick="module_main.default.sidebarToggleHandler()">
-            Menu <i class="fas fa-caret-down"></i></a>
-        </div>
-        <nav class="card-body p-0 collapse show" id="sidebar_body">
-          <ul id="displayed_sidebar" class="list pl2 p-2 bg-yellow">
-        </ul>
-        </nav>
+          <details open  class="bg-light-gray" >
+              <summary id="sidebarToggleLink" onclick="module_main.default.sidebarToggleHandler()">
+            Menu
+              </summary>
+              <ul id="sidebarBody" class="list pl2 p-0 bg-yellow">
+              </ul>
+          </details>
       </aside>
       <main class="col p-3" role="main">
         
@@ -221,15 +220,14 @@
 <main>
     <article>
   <aside id="toc_card" class="card border noPrint ">
-    <div id="toc_header" class="card-title border d-flex justify-content-between">
-        <a data-toggle="collapse" href="#toc_body" role="button" aria-expanded="true" aria-controls="toc_body">
-          What's in this page? <i class="fas fa-caret-down"></i> </a>
-    </div>
-    <div id="toc_body" class="card-body collapse p-0">
-      
-      <ul id="toc_ul" class="list p-0">
-      </ul>
-    </div>
+    <details id="toc_header">
+        <summary>What's in this page?</summary>
+      <div id="toc_body" class="p-0">
+        
+        <ul id="toc_ul" class="list p-0">
+        </ul>
+      </div>
+    </details>
   </aside>
   <div id="post_content">
   <p>ब्रह्मजिज्ञासां प्रतिज्ञाय ब्रह्मणो लक्षणमुक्तम् — [‘जन्माद्यस्य यतः’ (ब्र. सू. १ । १ । २)](<a href="https://advaitasharada.sringeri.net/display/bhashya/BS?page=1&amp;id=BS_C01_S01_V02&amp;hl=">https://advaitasharada.sringeri.net/display/bhashya/BS?page=1&amp;id=BS_C01_S01_V02&amp;hl=</a>जन्माद्यस्य यतः) इति । तल्लक्षणं प्रधानस्यापि समानमित्याशङ्क्य तदशब्दत्वेन निराकृतम् — <a href="https://advaitasharada.sringeri.net/display/bhashya/BS?page=1&amp;id=BS_C01_S01_V05&amp;hl=%E0%A4%88%E0%A4%95%E0%A5%8D%E0%A4%B7%E0%A4%A4%E0%A5%87%E0%A4%B0%E0%A5%8D%E0%A4%A8%E0%A4%BE%E0%A4%B6%E0%A4%AC%E0%A5%8D%E0%A4%A6%E0%A4%AE%E0%A5%8D">‘ईक्षतेर्नाशब्दम्’ (ब्र. सू. १ । १ । ५)</a> इति । गतिसामान्यं च वेदान्तवाक्यानां ब्रह्मकारणवादं प्रति विद्यते, न प्रधानकारणवादं प्रतीति प्रपञ्चितं गतेन ग्रन्थेन । इदं त्विदानीमवशिष्टमाशङ्क्यते — यदुक्तं प्रधानस्याशब्दत्वम् , तदसिद्धम् , कासुचिच्छाखासु प्रधानसमर्पणाभासानां शब्दानां श्रूयमाणत्वात् ; अतः प्रधानस्य कारणत्वं वेदसिद्धमेव महद्भिः परमर्षिभिः कपिलप्रभृतिभिः परिगृहीतमिति प्रसज्यते ; तद्यावत्तेषां शब्दानामन्यपरत्वं न प्रतिपाद्यते, तावत्सर्वज्ञं ब्रह्म जगतः कारणमिति प्रतिपादितमप्याकुलीभवेत् ; अतस्तेषामन्यपरत्वं दर्शयितुं परः सन्दर्भः प्रवर्तते ॥</p>
@@ -476,7 +474,7 @@
     <a class="btn btn-secondary" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
     <div class="btn small border">
       
-      <a href="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml"><img src="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml/badge.svg"> Built </a> on 2022 Feb 10 07:14:41 UTC. (<a href="http://google.com/search?q=07%3a14%3a41%20UTC to IST">IST</a>)
+      <a href="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml"><img src="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml/badge.svg"> Built </a> on 2022 Feb 13 17:37:34 UTC. (<a href="http://google.com/search?q=17%3a37%3a34%20UTC to IST">IST</a>)
     </div>
   <ul id="footer-bar-right-custom" class="list-group list-group-horizontal">
   </ul>

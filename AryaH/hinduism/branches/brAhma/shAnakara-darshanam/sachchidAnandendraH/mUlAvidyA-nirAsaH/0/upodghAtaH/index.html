@@ -206,14 +206,13 @@
           <div id="fastSearch">
               <input id="searchInput" placeholder="शीर्षिकान्विष्यताम्"  tabindex="0">
           </div>
-          <div id="sidebarTitle" class="card-title bg-light-gray border d-flex justify-content-between" >
-          <a name="sidebarToggleLink" data-toggle="collapse" href="#sidebar_body" role="button" aria-expanded="true" aria-controls="sidebar_body" onclick="module_main.default.sidebarToggleHandler()">
-            Menu <i class="fas fa-caret-down"></i></a>
-        </div>
-        <nav class="card-body p-0 collapse show" id="sidebar_body">
-          <ul id="displayed_sidebar" class="list pl2 p-2 bg-yellow">
-        </ul>
-        </nav>
+          <details open  class="bg-light-gray" >
+              <summary id="sidebarToggleLink" onclick="module_main.default.sidebarToggleHandler()">
+            Menu
+              </summary>
+              <ul id="sidebarBody" class="list pl2 p-0 bg-yellow">
+              </ul>
+          </details>
       </aside>
       <main class="col p-3" role="main">
         
@@ -225,15 +224,14 @@
 </header>
 <article>
   <aside id="toc_card" class="card border noPrint ">
-    <div id="toc_header" class="card-title border d-flex justify-content-between">
-        <a data-toggle="collapse" href="#toc_body" role="button" aria-expanded="true" aria-controls="toc_body">
-          What's in this page? <i class="fas fa-caret-down"></i> </a>
-    </div>
-    <div id="toc_body" class="card-body collapse p-0">
-      
-      <ul id="toc_ul" class="list p-0">
-      </ul>
-    </div>
+    <details id="toc_header">
+        <summary>What's in this page?</summary>
+      <div id="toc_body" class="p-0">
+        
+        <ul id="toc_ul" class="list p-0">
+        </ul>
+      </div>
+    </details>
   </aside>
   <div id="post_content">
   <p>निश्चप्रचमिदं वेदान्तार्थनिरूपणनिष्णातानां विद्वद्वरेण्यानां यत् श्रीशङ्करभगवत्पादैः परमार्थतत्त्वं स्वीयप्रस्थानत्रयभाष्येषु सार्वत्रिकानुभव युक्त्याधारण समस्तवेदार्थविषयं निरूपितं तत् सर्वदेशकालावस्थास्वपि अबाध्यम् । तदीयं भाष्यं प्रसन्नगम्भीरं करतलन्यस्तामलकवत् अद्वितीयं वेदान्तविषयं परमार्थतत्त्वं यथानुभवं हृदयमारोपयदपि कैश्चिदर्वाचीन व्याख्यातृभिरन्यैश्च श्रीरामानुजादिभाष्यकारैः श्रीशङ्करभगवत्पादभाष्या शयमजानद्भिः मिथ्याव्याख्यानमृषाध्यारोपेण च सन्दूषितम् । श्रीशङ्कर भगवत्पादानुयायित्वेन प्रख्यातमहद्भिः कैश्चिदर्वाचीनव्याख्यानकारैः यत् व्याख्यातं तत् क्वचित् भाष्याक्षरबहिर्भूतत्वेनैव व्याख्यातं तेनैव कारणेन चान्येषां, शङ्करभाष्यप्रतिपक्षभूतानां रामानुजादीनां लब्धावकाशमगमत् । अतस्तेषां अपव्याख्यानानां दूरीकरणार्थं श्रीसच्चिदानन्देन्द्रसरस्वती स्वामिभिः प्रप्रथमः प्रयत्नः कृतः । इदं चान्यत् वाचकमहोदयैः अवगन्तव्यं यत् व्याख्यानप्रस्थानेषु नैकोऽप्यंशः ग्राह्यत्वेनास्तीति न मन्तव्यम् । यतः अनेके भाष्योक्ताः प्राकृतबुद्ध्यगम्याः विषयाः ये सन्ति ताननितरसाधारण रूपेण स्पष्टीकुर्वन्तः युक्तिभिश्च समर्थयन्तः अस्माकं महदुपकुर्वन्तो वर्तन्त इत्यत्र न कापि संशीतिरस्ति । तथापि अतिसुन्दरं भाष्यं प्रचलितमूलाविद्यादिवादेन पङ्कीकृतमिति सखेदं अभिदध्महे । तमिमं पळू दूरीकर्तुं &ldquo;मूलाविद्यानिरासः&rdquo; अथवा &ldquo;शङ्करहृदयमिति&rdquo; ग्रन्थः. श्रीचरणैः निरमायि । तस्यास्य प्रथमसंस्करणं १९२९ तमे क्रिस्ताब्दे अभवत् । इदानीं तु द्वितीयमुद्रणस्य संदर्भः सजात: यस्मात्</p>
@@ -283,7 +281,7 @@
     <a class="btn btn-secondary" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
     <div class="btn small border">
       
-      <a href="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml"><img src="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml/badge.svg"> Built </a> on 2022 Feb 10 07:14:41 UTC. (<a href="http://google.com/search?q=07%3a14%3a41%20UTC to IST">IST</a>)
+      <a href="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml"><img src="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml/badge.svg"> Built </a> on 2022 Feb 13 17:37:34 UTC. (<a href="http://google.com/search?q=17%3a37%3a34%20UTC to IST">IST</a>)
     </div>
   <ul id="footer-bar-right-custom" class="list-group list-group-horizontal">
   </ul>

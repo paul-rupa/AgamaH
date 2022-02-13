@@ -206,14 +206,13 @@
           <div id="fastSearch">
               <input id="searchInput" placeholder="शीर्षिकान्विष्यताम्"  tabindex="0">
           </div>
-          <div id="sidebarTitle" class="card-title bg-light-gray border d-flex justify-content-between" >
-          <a name="sidebarToggleLink" data-toggle="collapse" href="#sidebar_body" role="button" aria-expanded="true" aria-controls="sidebar_body" onclick="module_main.default.sidebarToggleHandler()">
-            Menu <i class="fas fa-caret-down"></i></a>
-        </div>
-        <nav class="card-body p-0 collapse show" id="sidebar_body">
-          <ul id="displayed_sidebar" class="list pl2 p-2 bg-yellow">
-        </ul>
-        </nav>
+          <details open  class="bg-light-gray" >
+              <summary id="sidebarToggleLink" onclick="module_main.default.sidebarToggleHandler()">
+            Menu
+              </summary>
+              <ul id="sidebarBody" class="list pl2 p-0 bg-yellow">
+              </ul>
+          </details>
       </aside>
       <main class="col p-3" role="main">
         
@@ -225,15 +224,14 @@
 </header>
 <article>
   <aside id="toc_card" class="card border noPrint ">
-    <div id="toc_header" class="card-title border d-flex justify-content-between">
-        <a data-toggle="collapse" href="#toc_body" role="button" aria-expanded="true" aria-controls="toc_body">
-          What's in this page? <i class="fas fa-caret-down"></i> </a>
-    </div>
-    <div id="toc_body" class="card-body collapse p-0">
-      
-      <ul id="toc_ul" class="list p-0">
-      </ul>
-    </div>
+    <details id="toc_header">
+        <summary>What's in this page?</summary>
+      <div id="toc_body" class="p-0">
+        
+        <ul id="toc_ul" class="list p-0">
+        </ul>
+      </div>
+    </details>
   </aside>
   <div id="post_content">
   <p>Possession, especially of the dead, was a particularly lively motif in Sanskrit and other Indic fiction. This was discussed at length by Maurice Bloomfield, who noted in 1917 that possessing another’s body “is an art destined to make a brilliant career in fiction.”5 Bloomfield, however, examined possession solely as a literary curiosity, not as a cultural phenomenon. In his study, Bloomfield summarized tales from the MBh, the KSS, including its lengthy cycle called Vetālapañcaviṃśati or the twenty-five tales of King Vikrama and a certain testy vampire (vetāla), and a few Jain texts, including the Pārśvanātha Caritra and Merutuṇga’s Prabandhacintāmaṇi (Wishing Stone of Narratives). His texts adopt familiar themes: a person or semidivine being like a yakṣa enters the body of another for the sake of personal gain, to protect the possessed individual, to learn a secret art, or to revive a deceased loved one. Some of these themes have already been observed in the MBh. The process of taking possession resembles that described in the Yogasūtras (YS) and its allied literature: forced, and usually stealthy, entry. The term attested most frequently is parakāyapraveśa, synonymous with the YS’s para śarīrāveśaḥ, terms consistent with our general observation that externally induced possession is recorded by forms of the verb pra√viś (the YS use of āveśaḥ demonstrates that this is not always the case). Unlike what we find in the hagiographies and yoga texts, rarely in fiction is spiritual or religious benefit suggested as a motive for possession except as it might coincide with personal gain. Instead, what is most prominent are tales in which animals are possessed either out of necessity, as when King Vikrama is exiled into the body of an elephant after his own body has been taken over by a brahman, or to gain access to secrets, as when various individuals enter the bodies of parrots, with their innate ability to mimic human speech.</p>
@@ -284,7 +282,7 @@ The Brahman restored to life the parrot, and great king Vikrama recovered his ow
     <a class="btn btn-secondary" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
     <div class="btn small border">
       
-      <a href="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml"><img src="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml/badge.svg"> Built </a> on 2022 Feb 10 07:14:41 UTC. (<a href="http://google.com/search?q=07%3a14%3a41%20UTC to IST">IST</a>)
+      <a href="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml"><img src="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml/badge.svg"> Built </a> on 2022 Feb 13 17:37:34 UTC. (<a href="http://google.com/search?q=17%3a37%3a34%20UTC to IST">IST</a>)
     </div>
   <ul id="footer-bar-right-custom" class="list-group list-group-horizontal">
   </ul>

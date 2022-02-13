@@ -206,14 +206,13 @@
           <div id="fastSearch">
               <input id="searchInput" placeholder="शीर्षिकान्विष्यताम्"  tabindex="0">
           </div>
-          <div id="sidebarTitle" class="card-title bg-light-gray border d-flex justify-content-between" >
-          <a name="sidebarToggleLink" data-toggle="collapse" href="#sidebar_body" role="button" aria-expanded="true" aria-controls="sidebar_body" onclick="module_main.default.sidebarToggleHandler()">
-            Menu <i class="fas fa-caret-down"></i></a>
-        </div>
-        <nav class="card-body p-0 collapse show" id="sidebar_body">
-          <ul id="displayed_sidebar" class="list pl2 p-2 bg-yellow">
-        </ul>
-        </nav>
+          <details open  class="bg-light-gray" >
+              <summary id="sidebarToggleLink" onclick="module_main.default.sidebarToggleHandler()">
+            Menu
+              </summary>
+              <ul id="sidebarBody" class="list pl2 p-0 bg-yellow">
+              </ul>
+          </details>
       </aside>
       <main class="col p-3" role="main">
         
@@ -225,15 +224,14 @@
 </header>
 <article>
   <aside id="toc_card" class="card border noPrint ">
-    <div id="toc_header" class="card-title border d-flex justify-content-between">
-        <a data-toggle="collapse" href="#toc_body" role="button" aria-expanded="true" aria-controls="toc_body">
-          What's in this page? <i class="fas fa-caret-down"></i> </a>
-    </div>
-    <div id="toc_body" class="card-body collapse p-0">
-      
-      <ul id="toc_ul" class="list p-0">
-      </ul>
-    </div>
+    <details id="toc_header">
+        <summary>What's in this page?</summary>
+      <div id="toc_body" class="p-0">
+        
+        <ul id="toc_ul" class="list p-0">
+        </ul>
+      </div>
+    </details>
   </aside>
   <div id="post_content">
   <p>It was once generally believed that, in the matter of spintual culture, South India was largely - If not exclusively-undebted to the North. A critical study of the cultural history of ancieat Iodia would, however, show that the advent of the Aryans in this country and their subsequent victorious progress altimately resulted not so much in the Aganisation of India as in the Indiadisation of the Aryans Let the illustrate this point with reference to religion. Broadly speakiog, the religion of the Aryans, which is popularly known as Brahmadiso or Vedic religion, developed mainly through three distinct stages - the cosmic-heroic worship of the RgTeda-Samhurā, the complex ntua lism of the Brāhmaner, and the mystic idealism of the Upanisads Obrously, such a religon, particularly in the form which it bad assumed in the age of the early Upanisads, mas not likely to satisfy the religious urge of the people at Large Though, there fore, its first Ausb, this hieratic Brahmanism seemed to dominate the religious scene of Northern India, its unidence soon began to wane The penod immediately following the prigcipal Upanısads, accordingly, saw the rise of new religious beliefs and practices Actually, these beliefs and practices were by no means new They had already been in eustence in this courtry to a Tesser or greater extent. But, 111 course of time, they ane to be suppressed by the religious ideology of the victorious Aryans Indeed, it is this latter ideology which must be characterized as Des and exotic As I bare said, the Vedic religion overwhelmed the earlier religions, but only temporanly Lo the post-Upanısadıc period, several pre-Vedic non-Aryan religious movements began to make their influence felt. Such were, for instance, the move ments which later consolidated themselves in the form of Buddhism and Jainis. The attitude of these two religions was asowedly acti-Vedic For my present purpose, I Deed not dilate upon their future history I may only say that it completely belied their
@@ -304,7 +302,7 @@ Can thus legend not be said also to epitomize, 10 a sense, the genesis of the en
     <a class="btn btn-secondary" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
     <div class="btn small border">
       
-      <a href="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml"><img src="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml/badge.svg"> Built </a> on 2022 Feb 10 07:14:41 UTC. (<a href="http://google.com/search?q=07%3a14%3a41%20UTC to IST">IST</a>)
+      <a href="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml"><img src="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml/badge.svg"> Built </a> on 2022 Feb 13 17:37:34 UTC. (<a href="http://google.com/search?q=17%3a37%3a34%20UTC to IST">IST</a>)
     </div>
   <ul id="footer-bar-right-custom" class="list-group list-group-horizontal">
   </ul>

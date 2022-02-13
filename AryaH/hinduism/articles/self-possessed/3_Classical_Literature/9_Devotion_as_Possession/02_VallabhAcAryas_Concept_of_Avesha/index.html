@@ -206,14 +206,13 @@
           <div id="fastSearch">
               <input id="searchInput" placeholder="शीर्षिकान्विष्यताम्"  tabindex="0">
           </div>
-          <div id="sidebarTitle" class="card-title bg-light-gray border d-flex justify-content-between" >
-          <a name="sidebarToggleLink" data-toggle="collapse" href="#sidebar_body" role="button" aria-expanded="true" aria-controls="sidebar_body" onclick="module_main.default.sidebarToggleHandler()">
-            Menu <i class="fas fa-caret-down"></i></a>
-        </div>
-        <nav class="card-body p-0 collapse show" id="sidebar_body">
-          <ul id="displayed_sidebar" class="list pl2 p-2 bg-yellow">
-        </ul>
-        </nav>
+          <details open  class="bg-light-gray" >
+              <summary id="sidebarToggleLink" onclick="module_main.default.sidebarToggleHandler()">
+            Menu
+              </summary>
+              <ul id="sidebarBody" class="list pl2 p-0 bg-yellow">
+              </ul>
+          </details>
       </aside>
       <main class="col p-3" role="main">
         
@@ -225,15 +224,14 @@
 </header>
 <article>
   <aside id="toc_card" class="card border noPrint ">
-    <div id="toc_header" class="card-title border d-flex justify-content-between">
-        <a data-toggle="collapse" href="#toc_body" role="button" aria-expanded="true" aria-controls="toc_body">
-          What's in this page? <i class="fas fa-caret-down"></i> </a>
-    </div>
-    <div id="toc_body" class="card-body collapse p-0">
-      
-      <ul id="toc_ul" class="list p-0">
-      </ul>
-    </div>
+    <details id="toc_header">
+        <summary>What's in this page?</summary>
+      <div id="toc_body" class="p-0">
+        
+        <ul id="toc_ul" class="list p-0">
+        </ul>
+      </div>
+    </details>
   </aside>
   <div id="post_content">
   <p>Vallabhācārya mentions āveśa in several brief works. His Nirodhalakṣaṇa,9 a text of twenty verses describing the symptoms (lakṣaṇa) of the highest devotional state (nirodha), contains the following verses: “Indeed, for the benefit of those whose senses have become defiled as a result of immersion in the world [saṃsārāveśa], [I declare that as a general principle] one should connect all the [sense] objects with Kṛṣṇa, the underlying omnipotent Lord. Worldly pain or separation cannot exist for those whose minds are always immersed in [āviṣṭa] the attributes of the destroyer of the demon Mura [viz. Kṛṣṇa]. Their joy is similar to that of Hari.”10 Similarly, in his own commentary, Prakasa, on the Śāstrārtha section (verse 53cd) of his Tattvārthadīpanibandha (Essay Illuminating the Nature of Truth), Vallabhācārya states that, for one in a state of divine possession (bhagavadavese), the Lord’s own attributes, such as pervasiveness, enter that person, even if the individual soul (jīva) is not itself all-pervasive.11 In the third verse of the Pañcapadyāni, a short text enumerating qualities of those who are best suited to listen profitably to the BhP, Vallabhācārya says: “Those who know, without doubt, Kṛṣṇa as He really is, believing with all the faculties of their heart, are restless either because of possession [āveśa] by the Lord or because of entering into the highest state of bhakti [nirodha], not otherwise.”</p>
@@ -282,7 +280,7 @@
     <a class="btn btn-secondary" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
     <div class="btn small border">
       
-      <a href="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml"><img src="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml/badge.svg"> Built </a> on 2022 Feb 10 07:14:41 UTC. (<a href="http://google.com/search?q=07%3a14%3a41%20UTC to IST">IST</a>)
+      <a href="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml"><img src="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml/badge.svg"> Built </a> on 2022 Feb 13 17:37:34 UTC. (<a href="http://google.com/search?q=17%3a37%3a34%20UTC to IST">IST</a>)
     </div>
   <ul id="footer-bar-right-custom" class="list-group list-group-horizontal">
   </ul>

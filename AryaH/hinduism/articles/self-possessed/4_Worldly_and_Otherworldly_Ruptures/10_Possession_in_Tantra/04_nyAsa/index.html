@@ -206,14 +206,13 @@
           <div id="fastSearch">
               <input id="searchInput" placeholder="शीर्षिकान्विष्यताम्"  tabindex="0">
           </div>
-          <div id="sidebarTitle" class="card-title bg-light-gray border d-flex justify-content-between" >
-          <a name="sidebarToggleLink" data-toggle="collapse" href="#sidebar_body" role="button" aria-expanded="true" aria-controls="sidebar_body" onclick="module_main.default.sidebarToggleHandler()">
-            Menu <i class="fas fa-caret-down"></i></a>
-        </div>
-        <nav class="card-body p-0 collapse show" id="sidebar_body">
-          <ul id="displayed_sidebar" class="list pl2 p-2 bg-yellow">
-        </ul>
-        </nav>
+          <details open  class="bg-light-gray" >
+              <summary id="sidebarToggleLink" onclick="module_main.default.sidebarToggleHandler()">
+            Menu
+              </summary>
+              <ul id="sidebarBody" class="list pl2 p-0 bg-yellow">
+              </ul>
+          </details>
       </aside>
       <main class="col p-3" role="main">
         
@@ -225,15 +224,14 @@
 </header>
 <article>
   <aside id="toc_card" class="card border noPrint ">
-    <div id="toc_header" class="card-title border d-flex justify-content-between">
-        <a data-toggle="collapse" href="#toc_body" role="button" aria-expanded="true" aria-controls="toc_body">
-          What's in this page? <i class="fas fa-caret-down"></i> </a>
-    </div>
-    <div id="toc_body" class="card-body collapse p-0">
-      
-      <ul id="toc_ul" class="list p-0">
-      </ul>
-    </div>
+    <details id="toc_header">
+        <summary>What's in this page?</summary>
+      <div id="toc_body" class="p-0">
+        
+        <ul id="toc_ul" class="list p-0">
+        </ul>
+      </div>
+    </details>
   </aside>
   <div id="post_content">
   <p>Two phenomena that share conceptual territory with āveśa are nyāsa and (prāṇa-) pratiṣṭhā. There is an important distinction between them: The latter two are intentional, textualized, and enjoined bodily constructions, transformations of intellectual and social practices (arguably these are the same thing) into sacred physical terrain. Nyasa (literally “setting upon, placing down, imposition”)38 is a common, and often standard, part of brahmanical worship that finds its greatest advocacy in the Tantras and Purāṇas. As a result, extended instruction of nyāsa may be found in virtually every manual of Hindu daily practice, including those sold outside the gates of Hindu temples everywhere in India.39 Nyasa is employed in obligatory rites (nitya) such as the daily saṃdhyā, the twice-daily rites of the twice-born performed at sunrise and sunset, as well as in the full range of rituals to be performed on special occasions, some calibrated calendrically (naimittika), and others performed to fulfill personal desires (kamya).40 Related to mudras or hand positions of esoteric significance (cf. Tantraraja Tantra 4.44d, which explicitly links a certain mudra with āveśa),41 nyāsa is a practice that combines simple mudras with brief mantras invoking names of deities, divine powers, ṛṣis, Vedic sacrifices, or letters of the alphabet. The intent of nyāsa is to impose or place the power of the mantras, and perforce the deities, and so on, which they inscribe, on or within various body parts, either one’s own or that of an image of a deity. This is effected, according to the widespread theology of nyasa, through a process called bhūtasuddhi, purification of the five fundamental elements (mahabhūtas)—earth, water, fire, mobile air, and all-pervasive space.42 The idea of a conjunction of deity and ritualist is old in India. The Bṛhaddevatā, a text of probably the mid-first millennium C.E. that organized Vedic knowledge according to the deities of the Ṛgveda, states as part of its conclusions that “fully introducing the deity into the mind” (manasi saṃnyasya devatām) while performing a sacrifice is a true signifier of knowledge.43</p>
@@ -301,7 +299,7 @@
     <a class="btn btn-secondary" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
     <div class="btn small border">
       
-      <a href="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml"><img src="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml/badge.svg"> Built </a> on 2022 Feb 10 07:14:41 UTC. (<a href="http://google.com/search?q=07%3a14%3a41%20UTC to IST">IST</a>)
+      <a href="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml"><img src="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml/badge.svg"> Built </a> on 2022 Feb 13 17:37:34 UTC. (<a href="http://google.com/search?q=17%3a37%3a34%20UTC to IST">IST</a>)
     </div>
   <ul id="footer-bar-right-custom" class="list-group list-group-horizontal">
   </ul>

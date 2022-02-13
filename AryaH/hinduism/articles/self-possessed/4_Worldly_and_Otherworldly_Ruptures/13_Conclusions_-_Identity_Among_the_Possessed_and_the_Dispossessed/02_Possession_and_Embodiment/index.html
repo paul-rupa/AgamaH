@@ -206,14 +206,13 @@
           <div id="fastSearch">
               <input id="searchInput" placeholder="शीर्षिकान्विष्यताम्"  tabindex="0">
           </div>
-          <div id="sidebarTitle" class="card-title bg-light-gray border d-flex justify-content-between" >
-          <a name="sidebarToggleLink" data-toggle="collapse" href="#sidebar_body" role="button" aria-expanded="true" aria-controls="sidebar_body" onclick="module_main.default.sidebarToggleHandler()">
-            Menu <i class="fas fa-caret-down"></i></a>
-        </div>
-        <nav class="card-body p-0 collapse show" id="sidebar_body">
-          <ul id="displayed_sidebar" class="list pl2 p-2 bg-yellow">
-        </ul>
-        </nav>
+          <details open  class="bg-light-gray" >
+              <summary id="sidebarToggleLink" onclick="module_main.default.sidebarToggleHandler()">
+            Menu
+              </summary>
+              <ul id="sidebarBody" class="list pl2 p-0 bg-yellow">
+              </ul>
+          </details>
       </aside>
       <main class="col p-3" role="main">
         
@@ -225,15 +224,14 @@
 </header>
 <article>
   <aside id="toc_card" class="card border noPrint ">
-    <div id="toc_header" class="card-title border d-flex justify-content-between">
-        <a data-toggle="collapse" href="#toc_body" role="button" aria-expanded="true" aria-controls="toc_body">
-          What's in this page? <i class="fas fa-caret-down"></i> </a>
-    </div>
-    <div id="toc_body" class="card-body collapse p-0">
-      
-      <ul id="toc_ul" class="list p-0">
-      </ul>
-    </div>
+    <details id="toc_header">
+        <summary>What's in this page?</summary>
+      <div id="toc_body" class="p-0">
+        
+        <ul id="toc_ul" class="list p-0">
+        </ul>
+      </div>
+    </details>
   </aside>
   <div id="post_content">
   <p>Among the prominent images in the Upaniṣads is that of the body as a locus for external forces. Although the early Upaniṣads are best known for their discussions of interior topography, they also display a sure knowledge of and deep concern for the physical body. Their knowledge of organs and other aspects of human physiology is derived largely from the antecedent Brāhmaṇa literature, in most cases indicating that this knowledge served purposes other than health. Principally, the purpose was to describe animals fit for sacrifice. This vision is modified in the Yoga, Śaiva, and other, later subgenres of Upaniṣads, when interest in the vedic sacrifices had begun to wane, to one in which the body is seen to encase nāḍīs (channels that circulate within the body) and cakras (subtle energy centers that are lined up vertically from the perineum to the crown of the head). Thus, the tantric vision of the body led to modifications in the Upaniṣadic view (e.g., Dhyānabindu Upaniṣad 50–72, Yogacūḍāmaṇi Upaniṣad).3 Increasingly, through various practices of yoga (āsana and prāṇāyāma), the body was viewed as transmutable. Although this is most evident in the later Upaniṣads, the early ones foreshadow them in this regard. In the waking state, the “self” (ātman) is said to abide in the heart, but in deep sleep and dream it wanders in the nāḍīs (BĀU 2.1.17). Sometimes it exits the body entirely, leaving the prāṇas in charge. At death, according to the later Upaniṣads, it leaves the body via the suṣumnā nāḍī (central upwardly flowing channel) (Yogaśikha Upaniṣad 6.5, etc.). The chief function of the body, then, is to house the life force (jīva) and, according to some Upaniṣads, the ātman. Brahmā, the Taittirīya (2.1.1) and Muṇḍaka (3.1.7) Upaniṣads state, dwells in the guhā, the space in the heart. Similarly, according to the Kaṭha (2.20) and Śvetāśvatara (3.11) Upaniṣads, the deity dwells in the guhā of all creatures. The Muṇḍaka (2.1.8,10) and Svetāsvatara (3.20) add that puruṣa is placed in it, while the Maitrāyaṇi Upaniṣad (26) states that ātman enters into it. The Kaṭha (4.6) says that the firstborn of Brahmā and Āditya enter and abide there, while many later Upaniṣads list a number of possible deities who assume residence in this secret place. The late Subala Upaniṣad (7.8), for example, states that Nārāyaṇa dwells there, while the Kaivalya Upaniṣad (3) states that the mendicant (yati) enters (visānti) what shines in the secret place.4 As explicated in Chapter 5, the Indic body was ripe for possession.</p>
@@ -293,7 +291,7 @@
     <a class="btn btn-secondary" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
     <div class="btn small border">
       
-      <a href="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml"><img src="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml/badge.svg"> Built </a> on 2022 Feb 10 07:14:41 UTC. (<a href="http://google.com/search?q=07%3a14%3a41%20UTC to IST">IST</a>)
+      <a href="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml"><img src="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml/badge.svg"> Built </a> on 2022 Feb 13 17:37:34 UTC. (<a href="http://google.com/search?q=17%3a37%3a34%20UTC to IST">IST</a>)
     </div>
   <ul id="footer-bar-right-custom" class="list-group list-group-horizontal">
   </ul>

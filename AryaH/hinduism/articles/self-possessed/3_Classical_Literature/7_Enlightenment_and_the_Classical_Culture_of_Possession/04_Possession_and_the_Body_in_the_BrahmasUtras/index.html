@@ -206,14 +206,13 @@
           <div id="fastSearch">
               <input id="searchInput" placeholder="शीर्षिकान्विष्यताम्"  tabindex="0">
           </div>
-          <div id="sidebarTitle" class="card-title bg-light-gray border d-flex justify-content-between" >
-          <a name="sidebarToggleLink" data-toggle="collapse" href="#sidebar_body" role="button" aria-expanded="true" aria-controls="sidebar_body" onclick="module_main.default.sidebarToggleHandler()">
-            Menu <i class="fas fa-caret-down"></i></a>
-        </div>
-        <nav class="card-body p-0 collapse show" id="sidebar_body">
-          <ul id="displayed_sidebar" class="list pl2 p-2 bg-yellow">
-        </ul>
-        </nav>
+          <details open  class="bg-light-gray" >
+              <summary id="sidebarToggleLink" onclick="module_main.default.sidebarToggleHandler()">
+            Menu
+              </summary>
+              <ul id="sidebarBody" class="list pl2 p-0 bg-yellow">
+              </ul>
+          </details>
       </aside>
       <main class="col p-3" role="main">
         
@@ -225,15 +224,14 @@
 </header>
 <article>
   <aside id="toc_card" class="card border noPrint ">
-    <div id="toc_header" class="card-title border d-flex justify-content-between">
-        <a data-toggle="collapse" href="#toc_body" role="button" aria-expanded="true" aria-controls="toc_body">
-          What's in this page? <i class="fas fa-caret-down"></i> </a>
-    </div>
-    <div id="toc_body" class="card-body collapse p-0">
-      
-      <ul id="toc_ul" class="list p-0">
-      </ul>
-    </div>
+    <details id="toc_header">
+        <summary>What's in this page?</summary>
+      <div id="toc_body" class="p-0">
+        
+        <ul id="toc_ul" class="list p-0">
+        </ul>
+      </div>
+    </details>
   </aside>
   <div id="post_content">
   <p>The final section of Bādarāyaṇa’s Brahmasūtras (BS) discusses the symptoms of enlightenment. One of the final sūtras in this section states that, just as the flame of a lamp “enters” (āveśaḥ) another wick, a liberated being can enter another body (pradīpavad āveśas tathā hi darśayati, BS 4.4.15). It will be of interest to examine the remarks of a few commentators on this sūtra. We first look at what is probably the oldest surviving commentary on the BS, that of Bhāskara, composed in the mid-seventh century, whose sectarian affiliation is unclear from this commentary. This is his sole surviving work. Then we examine the remarks of Śaṇkara, who wrote his advaita commentary about a century later. The next commentary to be briefly examined is that of Nimbārka, whose school is called bhedābheda (nondifference in difference) and whose date is disputed, but may have flourished in South India at about the same time as Śaṇkara.26 Then, we look at the Vaiṣṇava commentary by Rāmānuja, who penned his viśiṣṭādvaita (qualified nondualism) works in the eleventh or twelfth century. This is followed by a brief exploration of the Śaiva commentary by Śrīkaṇṭha of the thirteenth century and the subcommentaries by Appayya Dīkṣita on both Śaṇkara and Śrīkaṇṭha, written in the seventeenth century. Finally, we examine the śuddhādvaita (pure nondualism) commentary by the Vaiṣṇava sectarian founder Vallabhācārya written in the early decades of the sixteenth century. To all of them, the sūtra assumes a background in yoga: āveśa is clearly regarded by both the sūtrakāra and the bhāṣyakāras as a siddhi (perfection) attainable through yogic practice or as a consequence of liberation. Examining this material also sheds light on the relationship between the different sectarian and commentatorial traditions with little studied aspects of their yogic heritage.</p>
@@ -286,7 +284,7 @@
     <a class="btn btn-secondary" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
     <div class="btn small border">
       
-      <a href="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml"><img src="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml/badge.svg"> Built </a> on 2022 Feb 10 07:14:41 UTC. (<a href="http://google.com/search?q=07%3a14%3a41%20UTC to IST">IST</a>)
+      <a href="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml"><img src="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml/badge.svg"> Built </a> on 2022 Feb 13 17:37:34 UTC. (<a href="http://google.com/search?q=17%3a37%3a34%20UTC to IST">IST</a>)
     </div>
   <ul id="footer-bar-right-custom" class="list-group list-group-horizontal">
   </ul>

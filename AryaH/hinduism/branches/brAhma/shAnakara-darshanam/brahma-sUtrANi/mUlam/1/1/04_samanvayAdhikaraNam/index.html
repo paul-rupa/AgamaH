@@ -206,14 +206,13 @@
           <div id="fastSearch">
               <input id="searchInput" placeholder="शीर्षिकान्विष्यताम्"  tabindex="0">
           </div>
-          <div id="sidebarTitle" class="card-title bg-light-gray border d-flex justify-content-between" >
-          <a name="sidebarToggleLink" data-toggle="collapse" href="#sidebar_body" role="button" aria-expanded="true" aria-controls="sidebar_body" onclick="module_main.default.sidebarToggleHandler()">
-            Menu <i class="fas fa-caret-down"></i></a>
-        </div>
-        <nav class="card-body p-0 collapse show" id="sidebar_body">
-          <ul id="displayed_sidebar" class="list pl2 p-2 bg-yellow">
-        </ul>
-        </nav>
+          <details open  class="bg-light-gray" >
+              <summary id="sidebarToggleLink" onclick="module_main.default.sidebarToggleHandler()">
+            Menu
+              </summary>
+              <ul id="sidebarBody" class="list pl2 p-0 bg-yellow">
+              </ul>
+          </details>
       </aside>
       <main class="col p-3" role="main">
         
@@ -225,15 +224,14 @@
 </header>
 <article>
   <aside id="toc_card" class="card border noPrint ">
-    <div id="toc_header" class="card-title border d-flex justify-content-between">
-        <a data-toggle="collapse" href="#toc_body" role="button" aria-expanded="true" aria-controls="toc_body">
-          What's in this page? <i class="fas fa-caret-down"></i> </a>
-    </div>
-    <div id="toc_body" class="card-body collapse p-0">
-      
-      <ul id="toc_ul" class="list p-0">
-      </ul>
-    </div>
+    <details id="toc_header">
+        <summary>What's in this page?</summary>
+      <div id="toc_body" class="p-0">
+        
+        <ul id="toc_ul" class="list p-0">
+        </ul>
+      </div>
+    </details>
   </aside>
   <div id="post_content">
   <p>कथं पुनर्ब्रह्मणः शास्त्रप्रमाणकत्वमुच्यते, यावता ‘आम्नायस्य क्रियार्थत्वादानर्थक्यमतदर्थानाम्’ (जै. सू. १ । २ । १) इति क्रियापरत्वं शास्त्रस्य प्रदर्शितम् । अतो वेदान्तानामानर्थक्यम् , अक्रियार्थत्वात् ; कर्तृदेवतादिप्रकाशनार्थत्वेन वा क्रियाविधिशेषत्वम् , उपासनादिक्रियान्तरविधानार्थत्वं वा । न हि परिनिष्ठितवस्तुप्रतिपादनं सम्भवति ; प्रत्यक्षादिविषयत्वात्परिनिष्ठितवस्तुनः, तत्प्रतिपादने च हेयोपादेयरहिते पुरुषार्थाभावात् । अत एव ‘सोऽरोदीत्’ इत्येवमादीनामानर्थक्यं मा भूदिति ‘विधिना त्वेकवाक्यत्वात्स्तुत्यर्थेन विधीनां स्युः’ (जै. सू. १ । २ । ७) इति स्तावकत्वेनार्थवत्त्वमुक्तम् । मन्त्राणां च ‘इषे त्वा’ इत्यादीनां क्रियातत्साधनाभिधायित्वेन कर्मसमवायित्वमुक्तम् । अतो न क्वचिदपि वेदवाक्यानां विधिसंस्पर्शमन्तरेणार्थवत्ता दृष्टा उपपन्ना वा । न च परिनिष्ठिते वस्तुस्वरूपे विधिः सम्भवति, क्रियाविषयत्वाद्विधेः । तस्मात्कर्मापेक्षितकर्तृदेवतादिस्वरूपप्रकाशनेन क्रियाविधिशेषत्वं वेदान्तानाम् । अथ प्रकरणान्तरभयान्नैतदभ्युपगम्यते, तथापि स्ववाक्यगतोपासनादिकर्मपरत्वम् । तस्मान्न ब्रह्मणः शास्त्रयोनित्वमिति प्राप्ते, उच्यते —</p>
@@ -285,7 +283,7 @@
     <a class="btn btn-secondary" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
     <div class="btn small border">
       
-      <a href="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml"><img src="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml/badge.svg"> Built </a> on 2022 Feb 10 07:14:41 UTC. (<a href="http://google.com/search?q=07%3a14%3a41%20UTC to IST">IST</a>)
+      <a href="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml"><img src="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml/badge.svg"> Built </a> on 2022 Feb 13 17:37:34 UTC. (<a href="http://google.com/search?q=17%3a37%3a34%20UTC to IST">IST</a>)
     </div>
   <ul id="footer-bar-right-custom" class="list-group list-group-horizontal">
   </ul>
