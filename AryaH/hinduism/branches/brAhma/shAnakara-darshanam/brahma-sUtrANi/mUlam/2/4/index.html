@@ -64,6 +64,7 @@
     <script src="/AgamaH/non_webpack_js/disqus.js"></script>
     <script src="/AgamaH/webpack_dist/ui_lib-bundle.js"></script>
     <script src="/AgamaH/webpack_dist/search-bundle.js"></script>
+    <script src="/AgamaH/webpack_dist/utils-bundle.js"></script>
 
     <link rel="stylesheet" href="/AgamaH/css/fonts.css">
     <link rel="stylesheet" href="/AgamaH/css/@fortawesome/fontawesome-free/css/solid.min.css">
@@ -228,6 +229,9 @@
         </ul>
       </div>
     </details>
+    <div id="progressBarDiv" class="row d-flex justify-content-center">
+      🐎💪<progress id="progressLoading" value="0" max="100"> 32% </progress>
+    </div>
   </aside>
   <div id="post_content">
   <p>वियदादिविषयः श्रुतिविप्रतिषेधस्तृतीयेन पादेन परिहृतः ; चतुर्थेन इदानीं प्राणविषयः परिह्रियते । तत्र तावत् — <a href="https://advaitasharada.sringeri.net/display/bhashya/Chandogya?page=6&amp;id=Ch_C06_S02_V03&amp;hl=%E0%A4%A4%E0%A4%A4%E0%A5%8D%E0%A4%A4%E0%A5%87%E0%A4%9C%E0%A5%8B%E0%A4%BD%E0%A4%B8%E0%A5%83%E0%A4%9C%E0%A4%A4">‘तत्तेजोऽसृजत’ (छा. उ. ६ । २ । ३)</a> इति, [‘तस्माद्वा एतस्मादात्मन आकाशः सम्भूतः’ (तै. उ. २ । १ । १)](<a href="https://advaitasharada.sringeri.net/display/bhashya/Taitiriya?page=2&amp;id=T_C02_S01_V01&amp;hl=">https://advaitasharada.sringeri.net/display/bhashya/Taitiriya?page=2&amp;id=T_C02_S01_V01&amp;hl=</a>तस्माद्वा एतस्मादात्मन आकाशः सम्भूतः) इति च एवमादिषु उत्पत्तिप्रकरणेषु प्राणानामुत्पत्तिर्न आम्नायते ; क्वचिच्चानुत्पत्तिरेव एषामाम्नायते, [‘असद्वा इदमग्र आसीत्’ (तै. उ. २ । ७ । १)](<a href="https://advaitasharada.sringeri.net/display/bhashya/Taitiriya?page=2&amp;id=T_C02_S07_V01&amp;hl=">https://advaitasharada.sringeri.net/display/bhashya/Taitiriya?page=2&amp;id=T_C02_S07_V01&amp;hl=</a>असद्वा इदमग्र आसीत्) । तदाहुः किं तदसदासीदित्यृषयो वाव तेऽग्रेऽसदासीत् । तदाहुः के ते ऋषय इति । प्राणा वाव ऋषयः’ — इत्यत्र प्रागुत्पत्तेः प्राणानां सद्भावश्रवणात् ; अन्यत्र तु प्राणानामप्युत्पत्तिः पठ्यते — ‘यथाग्नेः क्षुद्रा विस्फुलिङ्गा व्युच्चरन्त्येवमेवास्मादात्मनः सर्वे प्राणाः’ इति, [‘एतस्माज्जायते प्राणो मनः सर्वेन्द्रियाणि च’ (मु. उ. २ । १ । ३)](<a href="https://advaitasharada.sringeri.net/display/bhashya/Mundaka?page=2&amp;id=MD_C02_S01_V03&amp;hl=">https://advaitasharada.sringeri.net/display/bhashya/Mundaka?page=2&amp;id=MD_C02_S01_V03&amp;hl=</a>एतस्माज्जायते प्राणो मनः सर्वेन्द्रियाणि च) इति, [‘सप्त प्राणाः प्रभवन्ति तस्मात्’ (मु. उ. २ । १ । ८)](<a href="https://advaitasharada.sringeri.net/display/bhashya/Mundaka?page=2&amp;id=MD_C02_S01_V08&amp;hl=">https://advaitasharada.sringeri.net/display/bhashya/Mundaka?page=2&amp;id=MD_C02_S01_V08&amp;hl=</a>सप्त प्राणाः प्रभवन्ति तस्मात्) इति, [‘स प्राणमसृजत प्राणाच्छ्रद्धां खं वायुर्ज्योतिरापः पृथिवीन्द्रियं मनोऽन्नम्’ (प्र. उ. ६ । ४)](<a href="https://advaitasharada.sringeri.net/display/bhashya/Prashna?page=6&amp;id=PR_C06_V04&amp;hl=">https://advaitasharada.sringeri.net/display/bhashya/Prashna?page=6&amp;id=PR_C06_V04&amp;hl=</a>स प्राणमसृजत प्राणाच्छ्रद्धां खं वायुर्ज्योतिरापः पृथिवीन्द्रियं मनोऽन्नम्) इति च एवमादिप्रदेशेषु । तत्र श्रुतिविप्रतिषेधादन्यतरनिर्धारणकारणानिरूपणाच्च अप्रतिपत्तिः प्राप्नोति । अथवा प्रागुत्पत्तेः सद्भावश्रवणाद्गौणी प्राणानामुत्पत्तिश्रुतिरिति प्राप्नोति । अत इदमुत्तरं पठति —</p>
@@ -497,7 +501,7 @@
     <a class="btn btn-secondary" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
     <div class="btn small border">
       
-      <a href="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml"><img src="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml/badge.svg"> Built </a> on 2022 Feb 14 10:29:07 UTC. (<a href="http://google.com/search?q=10%3a29%3a07%20UTC to IST">IST</a>)
+      <a href="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml"><img src="https://github.com/vishvAsa/AgamaH/actions/workflows/build.yml/badge.svg"> Built </a> on 2022 Feb 15 16:11:27 UTC. (<a href="http://google.com/search?q=16%3a11%3a27%20UTC to IST">IST</a>)
     </div>
   <ul id="footer-bar-right-custom" class="list-group list-group-horizontal">
   </ul>
